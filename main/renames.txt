@@ -1,4 +1,5 @@
 ﻿ConfigDumpInfo.xml-->ConfigDumpInfo.xml
 Configuration.xml-->Configuration.xml
 Catalogs\Дети.xml-->Catalogs\Дети.xml
+Catalogs\Прививки.xml-->Catalogs\Прививки.xml
 Languages\Русский.xml-->Languages\Русский.xml

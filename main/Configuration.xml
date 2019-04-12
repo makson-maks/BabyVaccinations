@@ -139,6 +139,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Catalog>Дети</Catalog>
+			<Catalog>Прививки</Catalog>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

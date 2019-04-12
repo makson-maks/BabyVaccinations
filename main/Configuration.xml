@@ -138,6 +138,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Catalog>Дети</Catalog>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

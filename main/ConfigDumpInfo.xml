@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.7">
 	<ConfigVersions>
-		<Metadata name="Configuration.ДетскиеПрививки" id="0fa37aec-7f6b-49af-aee0-1b71904747b1" configVersion="efc3cf5cd00a7a438880115dc39257bd00000000"/>
+		<Metadata name="Catalog.Дети" id="e4b983f7-8ec9-4363-a21a-736c40293f21" configVersion="47e587ece85ac840836342476257f89400000000"/>
+		<Metadata name="Configuration.ДетскиеПрививки" id="0fa37aec-7f6b-49af-aee0-1b71904747b1" configVersion="0da41ea580d48f45b5215a7ad1fffde900000000"/>
 		<Metadata name="Language.Русский" id="2c9ed229-ef48-4eec-9b14-ee09ff5ceeb8" configVersion="b148cf0ffc26294d9eab0047acd0ed0d00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

@@ -44,8 +44,8 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
-			<Vendor/>
-			<Version/>
+			<Vendor>makson_maks</Vendor>
+			<Version>0.0.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -138,8 +138,19 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<CommonModule>ОбновлениеИнформационнойБазыВызовСервера</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыСервер</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыСлужебный</CommonModule>
+			<CommonModule>РаботаСПланировщикомКлиентСервер</CommonModule>
+			<CommonModule>РаботаСПрививкамиПовтИсп</CommonModule>
+			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
+			<CommonForm>ФормаНачальнойСтраницы</CommonForm>
 			<Catalog>Дети</Catalog>
 			<Catalog>Прививки</Catalog>
+			<Enum>ПериодыОтображенияКалендаря</Enum>
+			<InformationRegister>АнологиПрививок</InformationRegister>
+			<InformationRegister>ВерсииПодсистем</InformationRegister>
+			<InformationRegister>ПрививкиВОчереди</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

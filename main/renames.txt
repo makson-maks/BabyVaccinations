@@ -25,4 +25,6 @@ Ext\ManagedApplicationModule.bsl-->Ext\ManagedApplicationModule.bsl
 InformationRegisters\АнологиПрививок.xml-->InformationRegisters\АнологиПрививок.xml
 InformationRegisters\ВерсииПодсистем.xml-->InformationRegisters\ВерсииПодсистем.xml
 InformationRegisters\ПрививкиВОчереди.xml-->InformationRegisters\ПрививкиВОчереди.xml
+InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи.xml-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи.xml
+InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи\Ext\Form.xml-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи\Ext\Form.xml
 Languages\Русский.xml-->Languages\Русский.xml

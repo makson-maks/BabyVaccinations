@@ -9,8 +9,8 @@
 		</Metadata>
 		<Metadata name="Catalog.Прививки.ManagerModule" id="26e554be-7069-4be4-8a50-78996e7b9f22.3" configVersion="cd9080657f8da3458f50e8a9bc6c770900000000"/>
 		<Metadata name="Catalog.Прививки.Predefined" id="26e554be-7069-4be4-8a50-78996e7b9f22.1c" configVersion="1751a0a910670549942b56e2b145fc0300000000"/>
-		<Metadata name="CommonForm.ФормаНачальнойСтраницы" id="626040ed-915d-4c57-b78b-2b4a3e921d5d" configVersion="82b1e87390610045abe20dcadafca36900000000"/>
-		<Metadata name="CommonForm.ФормаНачальнойСтраницы.Form" id="626040ed-915d-4c57-b78b-2b4a3e921d5d.0" configVersion="aa00320e69c7784e9d80b2f40189278400000000"/>
+		<Metadata name="CommonForm.ФормаНачальнойСтраницы" id="626040ed-915d-4c57-b78b-2b4a3e921d5d" configVersion="5f737278caea9c4099fbd509e253f49700000000"/>
+		<Metadata name="CommonForm.ФормаНачальнойСтраницы.Form" id="626040ed-915d-4c57-b78b-2b4a3e921d5d.0" configVersion="47005c6e9003f64aa6bf957336e513cb00000000"/>
 		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыВызовСервера" id="896ffa16-8568-4b22-aa56-8b109b75e44c" configVersion="5537b0d54373cd4aad5ad18b4fb8659b00000000"/>
 		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыВызовСервера.Module" id="896ffa16-8568-4b22-aa56-8b109b75e44c.0" configVersion="62cec401630b68468ae562d8f9dd659000000000"/>
 		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыСервер" id="dc0f2553-1fdf-4c45-9e93-5ccae271d7ff" configVersion="866f13e679cf8045b26313bb224b197400000000"/>
@@ -39,12 +39,14 @@
 			<Metadata name="InformationRegister.ВерсииПодсистем.Resource.Версия" id="c4d2d1b0-a6e9-4074-a715-9ee16432c91f"/>
 			<Metadata name="InformationRegister.ВерсииПодсистем.Dimension.ИмяПодсистемы" id="e6b9b035-7261-4dc6-aad8-4162c4799349"/>
 		</Metadata>
-		<Metadata name="InformationRegister.ПрививкиВОчереди" id="9b805e52-d89f-4292-bc86-9ebc0fd833c0" configVersion="9fa514cf0f079a46bbdb394449e3c3c200000000">
+		<Metadata name="InformationRegister.ПрививкиВОчереди" id="9b805e52-d89f-4292-bc86-9ebc0fd833c0" configVersion="9bede7d41bb77142ae6e4754936a3a4600000000">
 			<Metadata name="InformationRegister.ПрививкиВОчереди.Dimension.Прививка" id="6b41ce16-178e-46f2-bb2f-441e16b86f0b"/>
 			<Metadata name="InformationRegister.ПрививкиВОчереди.Dimension.Ребенок" id="813dd40b-454f-495b-9fe1-996dd3b2fc63"/>
 			<Metadata name="InformationRegister.ПрививкиВОчереди.Resource.ДатаНапоминания" id="b6ef52b7-f2d0-4106-bd01-1fc7b262c268"/>
 			<Metadata name="InformationRegister.ПрививкиВОчереди.Resource.ДатаУстановки" id="eb010888-34b5-4f3f-aece-fcb41495c570"/>
 		</Metadata>
+		<Metadata name="InformationRegister.ПрививкиВОчереди.Form.ФормаЗаписи" id="3f95aa46-852c-48e0-be1c-65079b4d3d43" configVersion="761e735327554648ae761eee6ed842c100000000"/>
+		<Metadata name="InformationRegister.ПрививкиВОчереди.Form.ФормаЗаписи.Form" id="3f95aa46-852c-48e0-be1c-65079b4d3d43.0" configVersion="8f6c2e4afde2cd48bf0d47c14069986700000000"/>
 		<Metadata name="Language.Русский" id="2c9ed229-ef48-4eec-9b14-ee09ff5ceeb8" configVersion="b148cf0ffc26294d9eab0047acd0ed0d00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

@@ -6,6 +6,12 @@
 		<Description>Пентаксим</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="85dd5081-2422-45c5-bb7f-5e29fa0028f8">
+		<Name>РегевакВ</Name>
+		<Code/>
+		<Description>Регевак В</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
 	<Item id="39eff5bc-8faf-4137-b8e4-1122aecaebaf">
 		<Name>Рототек</Name>
 		<Code/>

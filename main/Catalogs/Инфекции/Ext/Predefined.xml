@@ -6,4 +6,58 @@
 		<Description>Вирусный гепатит В</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="d6c7d51a-f5b6-4cd6-9e3a-53bd2fe1d6ed">
+		<Name>Дифтерия</Name>
+		<Code/>
+		<Description>Дифтерия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="86ce5d5b-f89e-4e06-ba81-b35bee76212e">
+		<Name>Коклюш</Name>
+		<Code/>
+		<Description>Коклюш</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c348d1b7-e9fd-4b56-914b-21c11c4ac5dc">
+		<Name>Корь</Name>
+		<Code/>
+		<Description>Корь</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7a3467cb-4c26-4963-833f-da344e7b4d87">
+		<Name>Краснуха</Name>
+		<Code/>
+		<Description>Краснуха</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ad7f4781-fee6-4aac-a904-4376907cda81">
+		<Name>ПневмококковаяИнфекция</Name>
+		<Code/>
+		<Description>Пневмококковая инфекция</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="25b9c8c5-2ecc-471d-8803-41de3e1f77fc">
+		<Name>Полиомиелит</Name>
+		<Code/>
+		<Description>Полиомиелит</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a9163633-a1f8-4b5f-b771-0a64b620be66">
+		<Name>Столбняк</Name>
+		<Code/>
+		<Description>Столбняк</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a549c906-4850-4c99-b9f9-2cf6f17af66a">
+		<Name>Туберкулез</Name>
+		<Code/>
+		<Description>Туберкулез</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a91858cf-f453-47ef-a949-1ee74ef13d5d">
+		<Name>ЭпидемическийПаротит</Name>
+		<Code/>
+		<Description>Эпидемический паротит</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
 </PredefinedData>

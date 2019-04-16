@@ -45,7 +45,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>makson_maks</Vendor>
-			<Version>0.0.4</Version>
+			<Version>0.0.10</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -151,7 +151,7 @@
 			<CommonForm>ФормаНастроек</CommonForm>
 			<Catalog>Дети</Catalog>
 			<Catalog>Инфекции</Catalog>
-			<Catalog>Прививки</Catalog>
+			<Catalog>Вакцины</Catalog>
 			<Enum>ПериодыОтображенияКалендаря</Enum>
 			<Enum>ТипыКалендаряПрививок</Enum>
 			<InformationRegister>АнологиПрививок</InformationRegister>

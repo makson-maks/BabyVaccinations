@@ -1,47 +1,53 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.7">
 	<ConfigVersions>
+		<Metadata name="Catalog.Вакцины" id="26e554be-7069-4be4-8a50-78996e7b9f22" configVersion="33a114af45cac7458204e5eeb121012a00000000">
+			<Metadata name="Catalog.Вакцины.Attribute.Описание" id="fc6683a6-51f7-4ace-b9b1-f2b02a6470fb"/>
+		</Metadata>
+		<Metadata name="Catalog.Вакцины.ManagerModule" id="26e554be-7069-4be4-8a50-78996e7b9f22.3" configVersion="fa2c94b35ca70e4293f6756b41e35f8300000000"/>
+		<Metadata name="Catalog.Вакцины.Predefined" id="26e554be-7069-4be4-8a50-78996e7b9f22.1c" configVersion="f674b19014791943bcc29c8f6623314d00000000"/>
 		<Metadata name="Catalog.Дети" id="e4b983f7-8ec9-4363-a21a-736c40293f21" configVersion="a5a9052c1e4d5e44bb0d1561e4d4e52a00000000">
 			<Metadata name="Catalog.Дети.Attribute.ТипКалендаря" id="2555f577-a668-43f8-be32-8d3320e616fa"/>
 			<Metadata name="Catalog.Дети.Attribute.ДатаРождения" id="ca82e229-cbb3-44e1-8e8c-2b10ae176dfb"/>
 		</Metadata>
-		<Metadata name="Catalog.Дети.Form.ФормаЭлемента" id="072d3ab0-8c18-4aff-a2a2-7f03b3dafd6e" configVersion="80137f821421ff42a744f12a4181544200000000"/>
-		<Metadata name="Catalog.Дети.Form.ФормаЭлемента.Form" id="072d3ab0-8c18-4aff-a2a2-7f03b3dafd6e.0" configVersion="8bdf525323e5ab41bd9d70d9c05e2d2c00000000"/>
-		<Metadata name="Catalog.Инфекции" id="2231df77-be53-4ce2-8923-4af2a44fb66e" configVersion="dbc3c293c164a64290999da66c021c1600000000">
+		<Metadata name="Catalog.Дети.Form.ФормаЭлемента" id="072d3ab0-8c18-4aff-a2a2-7f03b3dafd6e" configVersion="4bec99a2ceacc7408be056512a00845100000000"/>
+		<Metadata name="Catalog.Дети.Form.ФормаЭлемента.Form" id="072d3ab0-8c18-4aff-a2a2-7f03b3dafd6e.0" configVersion="6bc6e4fddf53994aa10cdc4f2b52aaf800000000"/>
+		<Metadata name="Catalog.Инфекции" id="2231df77-be53-4ce2-8923-4af2a44fb66e" configVersion="3dbdf7b4d01cfb41ba3067a0f8a0ae5800000000">
+			<Metadata name="Catalog.Инфекции.TabularSection.МесяцаВакцинаций.Attribute.ПредставлениеВозраста" id="03cdf235-58a0-4153-b278-f9bb28658a32"/>
+			<Metadata name="Catalog.Инфекции.TabularSection.Вакцины.Attribute.Вакцина" id="1204a7af-569d-4d97-91ca-c87c4f08f3f8"/>
 			<Metadata name="Catalog.Инфекции.TabularSection.МесяцаВакцинаций.Attribute.Месяц" id="92e26c6e-f211-4edb-81d7-bf9fa2e85a3f"/>
+			<Metadata name="Catalog.Инфекции.Attribute.ВходитВНациональныйКалендарь" id="a4b02c0f-e215-4805-8066-be17a6e05f21"/>
+			<Metadata name="Catalog.Инфекции.TabularSection.Вакцины" id="e76ad5a1-e917-4851-b0a2-7fded297baa8"/>
 			<Metadata name="Catalog.Инфекции.TabularSection.МесяцаВакцинаций" id="fb9729c1-729b-41ec-874c-ac4fbcd70f9f"/>
 		</Metadata>
-		<Metadata name="Catalog.Инфекции.ManagerModule" id="2231df77-be53-4ce2-8923-4af2a44fb66e.3" configVersion="3ab7b836e931df42af6eddd54d9b783100000000"/>
+		<Metadata name="Catalog.Инфекции.Form.ФормаЭлемента" id="7513b1d5-c620-4ec4-bf6e-b55f37ff766e" configVersion="8909b909c3cbf54187507c81397238a900000000"/>
+		<Metadata name="Catalog.Инфекции.Form.ФормаЭлемента.Form" id="7513b1d5-c620-4ec4-bf6e-b55f37ff766e.0" configVersion="0c7333eecf86ea4181960d018e9f7bca00000000"/>
+		<Metadata name="Catalog.Инфекции.ManagerModule" id="2231df77-be53-4ce2-8923-4af2a44fb66e.3" configVersion="d25177caea5cd941ad6b7352009b217d00000000"/>
 		<Metadata name="Catalog.Инфекции.ObjectModule" id="2231df77-be53-4ce2-8923-4af2a44fb66e.0" configVersion="e8c8d5829400ed40bbd20726d7de19a700000000"/>
-		<Metadata name="Catalog.Инфекции.Predefined" id="2231df77-be53-4ce2-8923-4af2a44fb66e.1c" configVersion="b9569b79886f0e4c87f502d4b57ad53800000000"/>
-		<Metadata name="Catalog.Прививки" id="26e554be-7069-4be4-8a50-78996e7b9f22" configVersion="a210b4e3782efa4ea0569310c30d4fa600000000">
-			<Metadata name="Catalog.Прививки.Attribute.Описание" id="fc6683a6-51f7-4ace-b9b1-f2b02a6470fb"/>
-		</Metadata>
-		<Metadata name="Catalog.Прививки.ManagerModule" id="26e554be-7069-4be4-8a50-78996e7b9f22.3" configVersion="6b388647e6754744a0573abe9a0418f900000000"/>
-		<Metadata name="Catalog.Прививки.Predefined" id="26e554be-7069-4be4-8a50-78996e7b9f22.1c" configVersion="1751a0a910670549942b56e2b145fc0300000000"/>
-		<Metadata name="CommonForm.ФормаНастроек" id="f06dc094-9f31-4785-b329-daf2379a142b" configVersion="c52a7c05d5c9c14c9608e2dea5c4ec1b00000000"/>
-		<Metadata name="CommonForm.ФормаНастроек.Form" id="f06dc094-9f31-4785-b329-daf2379a142b.0" configVersion="aae51c01940a27478da0f0b750b62a4200000000"/>
-		<Metadata name="CommonForm.ФормаНачальнойСтраницы" id="626040ed-915d-4c57-b78b-2b4a3e921d5d" configVersion="1ef504ad6ce1a94c8efbef856334066200000000"/>
-		<Metadata name="CommonForm.ФормаНачальнойСтраницы.Form" id="626040ed-915d-4c57-b78b-2b4a3e921d5d.0" configVersion="d75bf8fd7067684a97ca8f482724dd4400000000"/>
+		<Metadata name="Catalog.Инфекции.Predefined" id="2231df77-be53-4ce2-8923-4af2a44fb66e.1c" configVersion="79fb38fd1d0e934295d5fc01c3df9dff00000000"/>
+		<Metadata name="CommonForm.ФормаНастроек" id="f06dc094-9f31-4785-b329-daf2379a142b" configVersion="9c7084d1b41f9d4e8bf17638d770ae6200000000"/>
+		<Metadata name="CommonForm.ФормаНастроек.Form" id="f06dc094-9f31-4785-b329-daf2379a142b.0" configVersion="eac6d0783cbfbd458e08d35800ff0c4f00000000"/>
+		<Metadata name="CommonForm.ФормаНачальнойСтраницы" id="626040ed-915d-4c57-b78b-2b4a3e921d5d" configVersion="7d6b78285316514babccba500a3e17b900000000"/>
+		<Metadata name="CommonForm.ФормаНачальнойСтраницы.Form" id="626040ed-915d-4c57-b78b-2b4a3e921d5d.0" configVersion="052f15feb473ab409b9913f497fe5b7800000000"/>
 		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыВызовСервера" id="896ffa16-8568-4b22-aa56-8b109b75e44c" configVersion="5537b0d54373cd4aad5ad18b4fb8659b00000000"/>
 		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыВызовСервера.Module" id="896ffa16-8568-4b22-aa56-8b109b75e44c.0" configVersion="62cec401630b68468ae562d8f9dd659000000000"/>
-		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыСервер" id="dc0f2553-1fdf-4c45-9e93-5ccae271d7ff" configVersion="26a0f7c7a878f64b89746405b51eb10a00000000"/>
-		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыСервер.Module" id="dc0f2553-1fdf-4c45-9e93-5ccae271d7ff.0" configVersion="6e3f19bed68599408d6dff384cb8b9f200000000"/>
+		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыСервер" id="dc0f2553-1fdf-4c45-9e93-5ccae271d7ff" configVersion="58003884756b8d4180791a3c353556b400000000"/>
+		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыСервер.Module" id="dc0f2553-1fdf-4c45-9e93-5ccae271d7ff.0" configVersion="6470fd90649b65438df305fea7309eed00000000"/>
 		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыСлужебный" id="d50b3589-68cd-4589-a7e9-61f809457405" configVersion="87a65c0614b04b4e815cecf34f4ff84400000000"/>
 		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыСлужебный.Module" id="d50b3589-68cd-4589-a7e9-61f809457405.0" configVersion="9c5b50e3ab10954bbc28af7a38fc474600000000"/>
-		<Metadata name="CommonModule.ОбщегоНазначенияКлиентСервер" id="e4069c75-bfcc-47d3-a18c-d6ee070da5bb" configVersion="645aa0345d3a3b409b871d4a040e1f7900000000"/>
-		<Metadata name="CommonModule.ОбщегоНазначенияКлиентСервер.Module" id="e4069c75-bfcc-47d3-a18c-d6ee070da5bb.0" configVersion="cc89f19e8e60f24fae1aed63f8431cea00000000"/>
-		<Metadata name="CommonModule.ОбщегоНазначенияПрививкиСервер" id="fa8b1acf-54c3-4779-9da3-460c1c031d26" configVersion="a930ea658cb2464b9cfacbd050e1cdbd00000000"/>
-		<Metadata name="CommonModule.ОбщегоНазначенияПрививкиСервер.Module" id="fa8b1acf-54c3-4779-9da3-460c1c031d26.0" configVersion="bfd8c4bf3708c84290d57db81529eae700000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияКлиентСервер" id="e4069c75-bfcc-47d3-a18c-d6ee070da5bb" configVersion="97913a8698c7e24d982e549b2f6dd48800000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияКлиентСервер.Module" id="e4069c75-bfcc-47d3-a18c-d6ee070da5bb.0" configVersion="4f56fe89d59c334bab5c9f8b00592ec100000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияПрививкиСервер" id="fa8b1acf-54c3-4779-9da3-460c1c031d26" configVersion="cc0b768feef51043a7b5c68bb272d96e00000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияПрививкиСервер.Module" id="fa8b1acf-54c3-4779-9da3-460c1c031d26.0" configVersion="ea39577d8e09794fa2411fcb7ea0a2da00000000"/>
 		<Metadata name="CommonModule.РаботаСКалендаремКлиентСервер" id="5635b48e-4d61-4980-8b92-de2a4ebfb1c3" configVersion="06ea50ce6f9b85488b09277931d7b5fd00000000"/>
 		<Metadata name="CommonModule.РаботаСКалендаремКлиентСервер.Module" id="5635b48e-4d61-4980-8b92-de2a4ebfb1c3.0" configVersion="166586e39b46ef4bbdd4d344ab7044d700000000"/>
-		<Metadata name="CommonModule.РаботаСКалендаремСервер" id="f25eabbd-71c2-4251-b989-1380fe3402dd" configVersion="c9ba6d94fcbc4c49985412a5643dd46500000000"/>
-		<Metadata name="CommonModule.РаботаСКалендаремСервер.Module" id="f25eabbd-71c2-4251-b989-1380fe3402dd.0" configVersion="8088dca1aaad394fb9eed4d78dc1a5f300000000"/>
-		<Metadata name="CommonModule.РаботаСПрививкамиПовтИсп" id="c1f4b813-02fc-4241-8b00-104137e9b7d5" configVersion="c14d52883bae5f48a0dc5d588b88829b00000000"/>
-		<Metadata name="CommonModule.РаботаСПрививкамиПовтИсп.Module" id="c1f4b813-02fc-4241-8b00-104137e9b7d5.0" configVersion="f362ef64fadbfb44927787258560756e00000000"/>
+		<Metadata name="CommonModule.РаботаСКалендаремСервер" id="f25eabbd-71c2-4251-b989-1380fe3402dd" configVersion="3a4c4adc2d707b4f9890782a8715693200000000"/>
+		<Metadata name="CommonModule.РаботаСКалендаремСервер.Module" id="f25eabbd-71c2-4251-b989-1380fe3402dd.0" configVersion="c6a430dd8387134688a60424af8928b500000000"/>
+		<Metadata name="CommonModule.РаботаСПрививкамиПовтИсп" id="c1f4b813-02fc-4241-8b00-104137e9b7d5" configVersion="ba5ef01c76349c4686f69a5bd58293bf00000000"/>
+		<Metadata name="CommonModule.РаботаСПрививкамиПовтИсп.Module" id="c1f4b813-02fc-4241-8b00-104137e9b7d5.0" configVersion="58e6893807c5d747b2b3465cfa66725d00000000"/>
 		<Metadata name="CommonModule.СтроковыеФункцииКлиентСервер" id="d6517382-6014-44fa-842a-9fca4a734c81" configVersion="07a68a81c0a7ca4288e10e38d902effe00000000"/>
 		<Metadata name="CommonModule.СтроковыеФункцииКлиентСервер.Module" id="d6517382-6014-44fa-842a-9fca4a734c81.0" configVersion="171d2cdcdae16244ae974e72cfdafbdf00000000"/>
-		<Metadata name="Configuration.ДетскиеПрививки" id="0fa37aec-7f6b-49af-aee0-1b71904747b1" configVersion="fed788df0842724ea64a89d68a96d21700000000"/>
+		<Metadata name="Configuration.ДетскиеПрививки" id="0fa37aec-7f6b-49af-aee0-1b71904747b1" configVersion="d0447bf2b5c5894e8d14ac708ec36f6900000000"/>
 		<Metadata name="Configuration.ДетскиеПрививки.HomePageWorkArea" id="58ad77f4-bdbc-41c3-b0ff-44ba328ffe74.8" configVersion="341980966f8e6c429a6463c85540f81000000000"/>
 		<Metadata name="Configuration.ДетскиеПрививки.ManagedApplicationModule" id="58ad77f4-bdbc-41c3-b0ff-44ba328ffe74.6" configVersion="571c83021fb14847b431594258b76ddc00000000"/>
 		<Metadata name="Enum.ПериодыОтображенияКалендаря" id="38209a73-efb7-4249-865b-df846d705d5a" configVersion="f971959ce039684394bb02aabce95cbe00000000">
@@ -61,7 +67,7 @@
 			<Metadata name="InformationRegister.ВерсииПодсистем.Resource.Версия" id="c4d2d1b0-a6e9-4074-a715-9ee16432c91f"/>
 			<Metadata name="InformationRegister.ВерсииПодсистем.Dimension.ИмяПодсистемы" id="e6b9b035-7261-4dc6-aad8-4162c4799349"/>
 		</Metadata>
-		<Metadata name="InformationRegister.ПрививкиВОчереди" id="9b805e52-d89f-4292-bc86-9ebc0fd833c0" configVersion="dee3ecae4e766842830f4ac24a9b462700000000">
+		<Metadata name="InformationRegister.ПрививкиВОчереди" id="9b805e52-d89f-4292-bc86-9ebc0fd833c0" configVersion="93bb14188d97dd429554e66d2e8b8dc000000000">
 			<Metadata name="InformationRegister.ПрививкиВОчереди.Dimension.Инфекция" id="0ac3f053-1a4c-40f7-bb2c-56aac77bf0d1"/>
 			<Metadata name="InformationRegister.ПрививкиВОчереди.Dimension.Прививка" id="6b41ce16-178e-46f2-bb2f-441e16b86f0b"/>
 			<Metadata name="InformationRegister.ПрививкиВОчереди.Dimension.Ребенок" id="813dd40b-454f-495b-9fe1-996dd3b2fc63"/>
@@ -71,6 +77,8 @@
 		</Metadata>
 		<Metadata name="InformationRegister.ПрививкиВОчереди.Form.ФормаЗаписи" id="3f95aa46-852c-48e0-be1c-65079b4d3d43" configVersion="761e735327554648ae761eee6ed842c100000000"/>
 		<Metadata name="InformationRegister.ПрививкиВОчереди.Form.ФормаЗаписи.Form" id="3f95aa46-852c-48e0-be1c-65079b4d3d43.0" configVersion="8f6c2e4afde2cd48bf0d47c14069986700000000"/>
+		<Metadata name="InformationRegister.ПрививкиВОчереди.Form.ФормаСписка" id="0527e400-1b12-478b-8c66-f86f0ccf7e96" configVersion="b16796a849f50144ae61f440b9e661a000000000"/>
+		<Metadata name="InformationRegister.ПрививкиВОчереди.Form.ФормаСписка.Form" id="0527e400-1b12-478b-8c66-f86f0ccf7e96.0" configVersion="d1ba5d829214e940b31858d6f3c6acb400000000"/>
 		<Metadata name="Language.Русский" id="2c9ed229-ef48-4eec-9b14-ee09ff5ceeb8" configVersion="b148cf0ffc26294d9eab0047acd0ed0d00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

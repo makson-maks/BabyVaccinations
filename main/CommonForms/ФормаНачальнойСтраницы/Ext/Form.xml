@@ -11,6 +11,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -94,26 +95,31 @@
 								<ExtendedTooltip name="СписокБлижайшихСобытийУправлениеПоискомРасширеннаяПодсказка" id="36"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<LabelField name="СписокБлижайшихСобытийРебенок" id="43">
-									<DataPath>~СписокБлижайшихСобытий.Ребенок</DataPath>
-									<ContextMenu name="СписокБлижайшихСобытийРебенокКонтекстноеМеню" id="44"/>
-									<ExtendedTooltip name="СписокБлижайшихСобытийРебенокРасширеннаяПодсказка" id="45"/>
-								</LabelField>
-								<ColumnGroup name="СписокБлижайшихСобытийГруппа1" id="46">
+								<ColumnGroup name="СписокБлижайшихСобытийГруппа1" id="46" DisplayImportance="VeryHigh">
+									<HorizontalStretch>true</HorizontalStretch>
 									<ExtendedTooltip name="СписокБлижайшихСобытийГруппа1РасширеннаяПодсказка" id="47"/>
 									<ChildItems>
-										<LabelField name="СписокБлижайшихСобытийДатаУстановки" id="37">
-											<DataPath>~СписокБлижайшихСобытий.ДатаУстановки</DataPath>
-											<ContextMenu name="СписокБлижайшихСобытийДатаУстановкиКонтекстноеМеню" id="38"/>
-											<ExtendedTooltip name="СписокБлижайшихСобытийДатаУстановкиРасширеннаяПодсказка" id="39"/>
+										<LabelField name="СписокБлижайшихСобытийРебенок" id="43" DisplayImportance="VeryHigh">
+											<DataPath>СписокБлижайшихСобытий.Ребенок</DataPath>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="СписокБлижайшихСобытийРебенокКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="СписокБлижайшихСобытийРебенокРасширеннаяПодсказка" id="45"/>
 										</LabelField>
-										<LabelField name="СписокБлижайшихСобытийПрививка" id="40">
-											<DataPath>~СписокБлижайшихСобытий.Прививка</DataPath>
-											<ContextMenu name="СписокБлижайшихСобытийПрививкаКонтекстноеМеню" id="41"/>
-											<ExtendedTooltip name="СписокБлижайшихСобытийПрививкаРасширеннаяПодсказка" id="42"/>
+										<LabelField name="СписокБлижайшихСобытийИнфекция" id="73" DisplayImportance="VeryHigh">
+											<DataPath>СписокБлижайшихСобытий.Инфекция</DataPath>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="СписокБлижайшихСобытийИнфекцияКонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="СписокБлижайшихСобытийИнфекцияРасширеннаяПодсказка" id="75"/>
 										</LabelField>
 									</ChildItems>
 								</ColumnGroup>
+								<LabelField name="СписокБлижайшихСобытийДатаВакцинации" id="70" DisplayImportance="Usual">
+									<DataPath>СписокБлижайшихСобытий.ДатаВакцинации</DataPath>
+									<MaxWidth>2</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокБлижайшихСобытийДатаВакцинацииКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="СписокБлижайшихСобытийДатаВакцинацииРасширеннаяПодсказка" id="72"/>
+								</LabelField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -530,7 +536,7 @@
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ПрививкиВОчереди.Ребенок КАК Ребенок,
-	МИНИМУМ(ПрививкиВОчереди.ДатаУстановки) КАК ДатаУстановки
+	МИНИМУМ(ПрививкиВОчереди.ДатаВакцинации) КАК ДатаВакцинации
 ПОМЕСТИТЬ ВТ_БлижайшиеДатыПрививок
 ИЗ
 	РегистрСведений.ПрививкиВОчереди КАК ПрививкиВОчереди
@@ -543,12 +549,13 @@
 ВЫБРАТЬ
 	ВТ_БлижайшиеДатыПрививок.Ребенок КАК Ребенок,
 	ПрививкиВОчереди.Прививка КАК Прививка,
-	ВТ_БлижайшиеДатыПрививок.ДатаУстановки КАК ДатаУстановки
+	ВТ_БлижайшиеДатыПрививок.ДатаВакцинации КАК ДатаВакцинации,
+	ПрививкиВОчереди.Инфекция КАК Инфекция
 ИЗ
 	ВТ_БлижайшиеДатыПрививок КАК ВТ_БлижайшиеДатыПрививок
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПрививкиВОчереди КАК ПрививкиВОчереди
 		ПО ВТ_БлижайшиеДатыПрививок.Ребенок = ПрививкиВОчереди.Ребенок
-			И ВТ_БлижайшиеДатыПрививок.ДатаУстановки = ПрививкиВОчереди.ДатаУстановки</QueryText>
+			И ВТ_БлижайшиеДатыПрививок.ДатаВакцинации = ПрививкиВОчереди.ДатаВакцинации</QueryText>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -556,15 +563,7 @@
 					</dcsset:filter>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
-							<dcsset:field>ДатаУстановки</dcsset:field>
-							<dcsset:orderType>Asc</dcsset:orderType>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:OrderItemField">
-							<dcsset:field>Ребенок</dcsset:field>
-							<dcsset:orderType>Asc</dcsset:orderType>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:OrderItemField">
-							<dcsset:field>Прививка</dcsset:field>
+							<dcsset:field>ДатаВакцинации</dcsset:field>
 							<dcsset:orderType>Asc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>

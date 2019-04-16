@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОткрытьНастройки" id="68">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ОткрытьНастройки</CommandName>
+				<ExtendedTooltip name="ФормаОткрытьНастройкиРасширеннаяПодсказка" id="69"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -86,7 +95,7 @@
 							</SearchControlAddition>
 							<ChildItems>
 								<LabelField name="СписокБлижайшихСобытийРебенок" id="43">
-									<DataPath>СписокБлижайшихСобытий.Ребенок</DataPath>
+									<DataPath>~СписокБлижайшихСобытий.Ребенок</DataPath>
 									<ContextMenu name="СписокБлижайшихСобытийРебенокКонтекстноеМеню" id="44"/>
 									<ExtendedTooltip name="СписокБлижайшихСобытийРебенокРасширеннаяПодсказка" id="45"/>
 								</LabelField>
@@ -94,12 +103,12 @@
 									<ExtendedTooltip name="СписокБлижайшихСобытийГруппа1РасширеннаяПодсказка" id="47"/>
 									<ChildItems>
 										<LabelField name="СписокБлижайшихСобытийДатаУстановки" id="37">
-											<DataPath>СписокБлижайшихСобытий.ДатаУстановки</DataPath>
+											<DataPath>~СписокБлижайшихСобытий.ДатаУстановки</DataPath>
 											<ContextMenu name="СписокБлижайшихСобытийДатаУстановкиКонтекстноеМеню" id="38"/>
 											<ExtendedTooltip name="СписокБлижайшихСобытийДатаУстановкиРасширеннаяПодсказка" id="39"/>
 										</LabelField>
 										<LabelField name="СписокБлижайшихСобытийПрививка" id="40">
-											<DataPath>СписокБлижайшихСобытий.Прививка</DataPath>
+											<DataPath>~СписокБлижайшихСобытий.Прививка</DataPath>
 											<ContextMenu name="СписокБлижайшихСобытийПрививкаКонтекстноеМеню" id="41"/>
 											<ExtendedTooltip name="СписокБлижайшихСобытийПрививкаРасширеннаяПодсказка" id="42"/>
 										</LabelField>
@@ -243,6 +252,107 @@
 						</PlannerField>
 					</ChildItems>
 				</Page>
+				<Page name="СтраницаДети" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дети</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница дети</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаДетиРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<Table name="СписокДетей" id="50">
+							<CommandBarLocation>Bottom</CommandBarLocation>
+							<Header>false</Header>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокДетей</DataPath>
+							<RowPictureDataPath>СписокДетей.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>ChangeHistory</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>ListSettings</ExcludedCommand>
+								<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>Refresh</ExcludedCommand>
+								<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокДетейКонтекстноеМеню" id="51"/>
+							<AutoCommandBar name="СписокДетейКоманднаяПанель" id="52">
+								<HorizontalAlign>Right</HorizontalAlign>
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="СписокДетейДобвавитьРебенка" id="66">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобвавитьРебенка</CommandName>
+										<ExtendedTooltip name="СписокДетейДобвавитьРебенкаРасширеннаяПодсказка" id="67"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокДетейРасширеннаяПодсказка" id="53"/>
+							<SearchStringAddition name="СписокДетейСтрокаПоиска" id="54">
+								<AdditionSource>
+									<Item>СписокДетей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДетейСтрокаПоискаКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="СписокДетейСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокДетейСостояниеПросмотра" id="57">
+								<AdditionSource>
+									<Item>СписокДетей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДетейСостояниеПросмотраКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="СписокДетейСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокДетейУправлениеПоиском" id="60">
+								<AdditionSource>
+									<Item>СписокДетей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДетейУправлениеПоискомКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="СписокДетейУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокДетейСсылка" id="63">
+									<DataPath>СписокДетей.Ссылка</DataPath>
+									<ContextMenu name="СписокДетейСсылкаКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="СписокДетейСсылкаРасширеннаяПодсказка" id="65"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>
@@ -330,8 +440,8 @@
 					<currentLevel xmlns="http://v8.1c.ru/8.2/data/chart">0</currentLevel>
 				</pl:timeScale>
 				<pl:period>
-					<pl:begin>2019-04-15T00:00:00</pl:begin>
-					<pl:end>2019-04-15T23:59:59</pl:end>
+					<pl:begin>2019-04-16T00:00:00</pl:begin>
+					<pl:end>2019-04-16T23:59:59</pl:end>
 				</pl:period>
 				<pl:displayCurrentDate>true</pl:displayCurrentDate>
 				<pl:itemsTimeRepresentation>BeginTime</pl:itemsTimeRepresentation>
@@ -469,6 +579,42 @@
 				</ListSettings>
 			</Settings>
 		</Attribute>
+		<Attribute name="СписокДетей" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список детей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Дети.Ссылка КАК Ссылка
+ИЗ
+	Справочник.Дети КАК Дети</QueryText>
+				<MainTable>Catalog.Дети</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="СдвинутьПериодВперед" id="1">
@@ -510,6 +656,46 @@
 			</Picture>
 			<Action>СдвинутьПериодНазад</Action>
 			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ДобвавитьРебенка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добвавить ребенка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добвавить ребенка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобвавитьРебенка</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьНастройки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SettingsStorage</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьНастройки</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>

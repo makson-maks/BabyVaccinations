@@ -14,7 +14,7 @@
 			<ExtendedTooltip name="ПрививкаРасширеннаяПодсказка" id="6"/>
 		</InputField>
 		<InputField name="ДатаУстановки" id="7">
-			<DataPath>Запись.ДатаУстановки</DataPath>
+			<DataPath>1/0:eb010888-34b5-4f3f-aece-fcb41495c570</DataPath>
 			<ContextMenu name="ДатаУстановкиКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ДатаУстановкиРасширеннаяПодсказка" id="9"/>
 		</InputField>

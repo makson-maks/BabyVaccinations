@@ -45,7 +45,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>makson_maks</Vendor>
-			<Version>0.0.10</Version>
+			<Version>0.0.11</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -142,7 +142,8 @@
 			<CommonModule>ОбновлениеИнформационнойБазыСервер</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыСлужебный</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
-			<CommonModule>ОбщегоНазначенияПрививкиСервер</CommonModule>
+			<CommonModule>ОбщегоНазначенияПовтИсп</CommonModule>
+			<CommonModule>ОбщегоНазначенияСервер</CommonModule>
 			<CommonModule>РаботаСКалендаремКлиентСервер</CommonModule>
 			<CommonModule>РаботаСКалендаремСервер</CommonModule>
 			<CommonModule>РаботаСПрививкамиПовтИсп</CommonModule>

@@ -5,6 +5,7 @@ Catalogs\Дети.xml-->Catalogs\Дети.xml
 Catalogs\Инфекции.xml-->Catalogs\Инфекции.xml
 Catalogs\Вакцины\Ext\ManagerModule.bsl-->Catalogs\Вакцины\Ext\ManagerModule.bsl
 Catalogs\Вакцины\Ext\Predefined.xml-->Catalogs\Вакцины\Ext\Predefined.xml
+Catalogs\Дети\Ext\ObjectModule.bsl-->Catalogs\Дети\Ext\ObjectModule.bsl
 Catalogs\Дети\Forms\ФормаЭлемента.xml-->Catalogs\Дети\Forms\ФормаЭлемента.xml
 Catalogs\Дети\Forms\ФормаЭлемента\Ext\Form.xml-->Catalogs\Дети\Forms\ФормаЭлемента\Ext\Form.xml
 Catalogs\Дети\Forms\ФормаЭлемента\Ext\Form\Module.bsl-->Catalogs\Дети\Forms\ФормаЭлемента\Ext\Form\Module.bsl
@@ -24,7 +25,8 @@ CommonModules\ОбновлениеИнформационнойБазыВызов
 CommonModules\ОбновлениеИнформационнойБазыСервер.xml-->CommonModules\ОбновлениеИнформационнойБазыСервер.xml
 CommonModules\ОбновлениеИнформационнойБазыСлужебный.xml-->CommonModules\ОбновлениеИнформационнойБазыСлужебный.xml
 CommonModules\ОбщегоНазначенияКлиентСервер.xml-->CommonModules\ОбщегоНазначенияКлиентСервер.xml
-CommonModules\ОбщегоНазначенияПрививкиСервер.xml-->CommonModules\ОбщегоНазначенияПрививкиСервер.xml
+CommonModules\ОбщегоНазначенияПовтИсп.xml-->CommonModules\ОбщегоНазначенияПовтИсп.xml
+CommonModules\ОбщегоНазначенияСервер.xml-->CommonModules\ОбщегоНазначенияСервер.xml
 CommonModules\РаботаСКалендаремКлиентСервер.xml-->CommonModules\РаботаСКалендаремКлиентСервер.xml
 CommonModules\РаботаСКалендаремСервер.xml-->CommonModules\РаботаСКалендаремСервер.xml
 CommonModules\РаботаСПрививкамиПовтИсп.xml-->CommonModules\РаботаСПрививкамиПовтИсп.xml
@@ -33,7 +35,8 @@ CommonModules\ОбновлениеИнформационнойБазыВызов
 CommonModules\ОбновлениеИнформационнойБазыСервер\Ext\Module.bsl-->CommonModules\ОбновлениеИнформационнойБазыСервер\Ext\Module.bsl
 CommonModules\ОбновлениеИнформационнойБазыСлужебный\Ext\Module.bsl-->CommonModules\ОбновлениеИнформационнойБазыСлужебный\Ext\Module.bsl
 CommonModules\ОбщегоНазначенияКлиентСервер\Ext\Module.bsl-->CommonModules\ОбщегоНазначенияКлиентСервер\Ext\Module.bsl
-CommonModules\ОбщегоНазначенияПрививкиСервер\Ext\Module.bsl-->CommonModules\ОбщегоНазначенияПрививкиСервер\Ext\Module.bsl
+CommonModules\ОбщегоНазначенияПовтИсп\Ext\Module.bsl-->CommonModules\ОбщегоНазначенияПовтИсп\Ext\Module.bsl
+CommonModules\ОбщегоНазначенияСервер\Ext\Module.bsl-->CommonModules\ОбщегоНазначенияСервер\Ext\Module.bsl
 CommonModules\РаботаСКалендаремКлиентСервер\Ext\Module.bsl-->CommonModules\РаботаСКалендаремКлиентСервер\Ext\Module.bsl
 CommonModules\РаботаСКалендаремСервер\Ext\Module.bsl-->CommonModules\РаботаСКалендаремСервер\Ext\Module.bsl
 CommonModules\РаботаСПрививкамиПовтИсп\Ext\Module.bsl-->CommonModules\РаботаСПрививкамиПовтИсп\Ext\Module.bsl
@@ -45,8 +48,11 @@ Ext\ManagedApplicationModule.bsl-->Ext\ManagedApplicationModule.bsl
 InformationRegisters\АнологиПрививок.xml-->InformationRegisters\АнологиПрививок.xml
 InformationRegisters\ВерсииПодсистем.xml-->InformationRegisters\ВерсииПодсистем.xml
 InformationRegisters\ПрививкиВОчереди.xml-->InformationRegisters\ПрививкиВОчереди.xml
+InformationRegisters\ПрививкиВОчереди\Ext\ManagerModule.bsl-->InformationRegisters\ПрививкиВОчереди\Ext\ManagerModule.bsl
 InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи.xml-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи.xml
 InformationRegisters\ПрививкиВОчереди\Forms\ФормаСписка.xml-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаСписка.xml
 InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи\Ext\Form.xml-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи\Ext\Form.xml
+InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи\Ext\Form\Module.bsl-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи\Ext\Form\Module.bsl
 InformationRegisters\ПрививкиВОчереди\Forms\ФормаСписка\Ext\Form.xml-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаСписка\Ext\Form.xml
+InformationRegisters\ПрививкиВОчереди\Forms\ФормаСписка\Ext\Form\Module.bsl-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаСписка\Ext\Form\Module.bsl
 Languages\Русский.xml-->Languages\Русский.xml

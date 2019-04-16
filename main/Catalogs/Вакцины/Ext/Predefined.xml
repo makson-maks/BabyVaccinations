@@ -18,4 +18,10 @@
 		<Description>Рототек</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="13ca487a-9715-4f9b-a729-d7ef0ed9d040">
+		<Name>ЭуваксВ</Name>
+		<Code/>
+		<Description>Эувакс В</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
 </PredefinedData>

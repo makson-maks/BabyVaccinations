@@ -44,11 +44,13 @@ CommonModules\СтроковыеФункцииКлиентСервер\Ext\Modul
 Enums\ПериодыОтображенияКалендаря.xml-->Enums\ПериодыОтображенияКалендаря.xml
 Enums\ТипыКалендаряПрививок.xml-->Enums\ТипыКалендаряПрививок.xml
 Ext\HomePageWorkArea.xml-->Ext\HomePageWorkArea.xml
+Ext\MainSectionCommandInterface.xml-->Ext\MainSectionCommandInterface.xml
 Ext\ManagedApplicationModule.bsl-->Ext\ManagedApplicationModule.bsl
-InformationRegisters\АнологиПрививок.xml-->InformationRegisters\АнологиПрививок.xml
+InformationRegisters\АналогиПрививок.xml-->InformationRegisters\АналогиПрививок.xml
 InformationRegisters\ВерсииПодсистем.xml-->InformationRegisters\ВерсииПодсистем.xml
 InformationRegisters\ПрививкиВОчереди.xml-->InformationRegisters\ПрививкиВОчереди.xml
 InformationRegisters\ПрививкиВОчереди\Ext\ManagerModule.bsl-->InformationRegisters\ПрививкиВОчереди\Ext\ManagerModule.bsl
+InformationRegisters\ПрививкиВОчереди\Ext\RecordSetModule.bsl-->InformationRegisters\ПрививкиВОчереди\Ext\RecordSetModule.bsl
 InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи.xml-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи.xml
 InformationRegisters\ПрививкиВОчереди\Forms\ФормаСписка.xml-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаСписка.xml
 InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи\Ext\Form.xml-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗаписи\Ext\Form.xml

@@ -29,6 +29,8 @@
 					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
 				<Page name="СтраницаБлижайшиеСобытия" id="22">
@@ -41,7 +43,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Страница ближайшие события</v8:content>
+							<v8:content>Ближайшие события</v8:content>
 						</v8:item>
 					</ToolTip>
 					<ExtendedTooltip name="СтраницаБлижайшиеСобытияРасширеннаяПодсказка" id="23"/>
@@ -366,10 +368,10 @@
 								<HorizontalAlign>Right</HorizontalAlign>
 								<Autofill>false</Autofill>
 								<ChildItems>
-									<Button name="СписокДетейДобвавитьРебенка" id="66">
+									<Button name="СписокДетейДобавитьРебенка" id="66">
 										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.ДобвавитьРебенка</CommandName>
-										<ExtendedTooltip name="СписокДетейДобвавитьРебенкаРасширеннаяПодсказка" id="67"/>
+										<CommandName>Form.Command.ДобавитьРебенка</CommandName>
+										<ExtendedTooltip name="СписокДетейДобавитьРебенкаРасширеннаяПодсказка" id="67"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
@@ -712,24 +714,24 @@
 			<Action>СдвинутьПериодНазад</Action>
 			<Representation>Picture</Representation>
 		</Command>
-		<Command name="ДобвавитьРебенка" id="3">
+		<Command name="ДобавитьРебенка" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Добвавить ребенка</v8:content>
+					<v8:content>Добавить ребенка</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Добвавить ребенка</v8:content>
+					<v8:content>Добавить ребенка</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>ДобвавитьРебенка</Action>
+			<Action>ДобавитьРебенка</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ОткрытьНастройки" id="4">

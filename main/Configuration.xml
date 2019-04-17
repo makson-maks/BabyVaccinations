@@ -155,7 +155,7 @@
 			<Catalog>Вакцины</Catalog>
 			<Enum>ПериодыОтображенияКалендаря</Enum>
 			<Enum>ТипыКалендаряПрививок</Enum>
-			<InformationRegister>АнологиПрививок</InformationRegister>
+			<InformationRegister>АналогиПрививок</InformationRegister>
 			<InformationRegister>ВерсииПодсистем</InformationRegister>
 			<InformationRegister>ПрививкиВОчереди</InformationRegister>
 		</ChildObjects>

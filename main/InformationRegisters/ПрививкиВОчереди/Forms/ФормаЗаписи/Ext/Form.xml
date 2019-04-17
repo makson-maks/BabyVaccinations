@@ -29,8 +29,7 @@
 				<Event name="StartChoice">ВакцинаНачалоВыбора</Event>
 			</Events>
 		</InputField>
-		<InputField name="ВозрастВакцинации" id="13">
-			<DataPath>Запись.ВозрастВакцинации</DataPath>
+		<UsualGroup name="ГруппаВозрастВакцинации" id="22">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -40,20 +39,42 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Возраст указывается как КоличествоМесяцев.КоличествоНедель
-Примеры:
-- 4 - это четыре месяца
-- 4.2 - это четыре с половиной месяца (4 месяца и 2 недели)
-- 4.5 - это пять месяцев и одна неделя (4 месяца и 5 недель)</v8:content>
+					<v8:content>Группа возраст вакцинации</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ToolTipRepresentation>Button</ToolTipRepresentation>
-			<ContextMenu name="ВозрастВакцинацииКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="ВозрастВакцинацииРасширеннаяПодсказка" id="15"/>
-			<Events>
-				<Event name="OnChange">ВозрастВакцинацииПриИзменении</Event>
-			</Events>
-		</InputField>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаВозрастВакцинацииРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<InputField name="Лет" id="13">
+					<DataPath>Запись.Лет</DataPath>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ЛетКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ЛетРасширеннаяПодсказка" id="15"/>
+					<Events>
+						<Event name="OnChange">ЛетПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Месяцев" id="16">
+					<DataPath>Запись.Месяцев</DataPath>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="МесяцевКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="МесяцевРасширеннаяПодсказка" id="18"/>
+					<Events>
+						<Event name="OnChange">МесяцевПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Недель" id="19">
+					<DataPath>Запись.Недель</DataPath>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="НедельКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="НедельРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="OnChange">НедельПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="ДатаВакцинации" id="10">
 			<DataPath>Запись.ДатаВакцинации</DataPath>
 			<ContextMenu name="ДатаВакцинацииКонтекстноеМеню" id="11"/>

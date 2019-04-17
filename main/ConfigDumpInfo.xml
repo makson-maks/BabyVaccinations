@@ -28,8 +28,8 @@
 		<Metadata name="Catalog.Инфекции.Predefined" id="2231df77-be53-4ce2-8923-4af2a44fb66e.1c" configVersion="79fb38fd1d0e934295d5fc01c3df9dff00000000"/>
 		<Metadata name="CommonForm.ФормаНастроек" id="f06dc094-9f31-4785-b329-daf2379a142b" configVersion="7110113c49d6bb4aa7ce472aeb6e1a9500000000"/>
 		<Metadata name="CommonForm.ФормаНастроек.Form" id="f06dc094-9f31-4785-b329-daf2379a142b.0" configVersion="91fde3cd32d6fe4aadd340fc9bb99c9c00000000"/>
-		<Metadata name="CommonForm.ФормаНачальнойСтраницы" id="626040ed-915d-4c57-b78b-2b4a3e921d5d" configVersion="27c15804973ead4f86ff8666bbec07c000000000"/>
-		<Metadata name="CommonForm.ФормаНачальнойСтраницы.Form" id="626040ed-915d-4c57-b78b-2b4a3e921d5d.0" configVersion="0f88e5d53841674fa1fa63bdea3fb0be00000000"/>
+		<Metadata name="CommonForm.ФормаНачальнойСтраницы" id="626040ed-915d-4c57-b78b-2b4a3e921d5d" configVersion="04993fdc64cf544a938b58fa176b90c000000000"/>
+		<Metadata name="CommonForm.ФормаНачальнойСтраницы.Form" id="626040ed-915d-4c57-b78b-2b4a3e921d5d.0" configVersion="e5f84b14c60f5b4381dce0c2091bd9de00000000"/>
 		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыВызовСервера" id="896ffa16-8568-4b22-aa56-8b109b75e44c" configVersion="5537b0d54373cd4aad5ad18b4fb8659b00000000"/>
 		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыВызовСервера.Module" id="896ffa16-8568-4b22-aa56-8b109b75e44c.0" configVersion="62cec401630b68468ae562d8f9dd659000000000"/>
 		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыСервер" id="dc0f2553-1fdf-4c45-9e93-5ccae271d7ff" configVersion="58003884756b8d4180791a3c353556b400000000"/>

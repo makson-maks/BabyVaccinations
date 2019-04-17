@@ -51,7 +51,22 @@
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>СписокБлижайшихСобытий</DataPath>
-							<RowPictureDataPath>СписокБлижайшихСобытий.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>ChangeHistory</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>ListSettings</ExcludedCommand>
+								<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+							</CommandSet>
 							<RefreshRequest>PullFromTop</RefreshRequest>
 							<AutoRefresh>false</AutoRefresh>
 							<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -103,6 +118,9 @@
 								<ContextMenu name="СписокБлижайшихСобытийУправлениеПоискомКонтекстноеМеню" id="35"/>
 								<ExtendedTooltip name="СписокБлижайшихСобытийУправлениеПоискомРасширеннаяПодсказка" id="36"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="AfterDeleteRow">СписокБлижайшихСобытийПослеУдаления</Event>
+							</Events>
 							<ChildItems>
 								<ColumnGroup name="СписокБлижайшихСобытийГруппа1" id="46" DisplayImportance="VeryHigh">
 									<HorizontalStretch>true</HorizontalStretch>
@@ -239,7 +257,7 @@
 									<HorizontalAlign>Center</HorizontalAlign>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<BackColor>web:PeachPuff</BackColor>
+									<BackColor>web:LavenderBlush</BackColor>
 									<ExtendedTooltip name="ГруппаПредставлениеПериодичностиРасширеннаяПодсказка" id="17"/>
 									<ChildItems>
 										<Button name="СдвинутьПериодНазад" id="20">
@@ -283,6 +301,7 @@
 							<ExtendedTooltip name="ПланировщикКалендарьПрививокРасширеннаяПодсказка" id="7"/>
 							<Events>
 								<Event name="BeforeCreate">ПланировщикКалендарьПрививокПередСозданием</Event>
+								<Event name="BeforeDelete">ПланировщикКалендарьПрививокПередУдалением</Event>
 								<Event name="BeforeStartQuickEdit">ПланировщикКалендарьПрививокПередНачаломБыстрогоРедактирования</Event>
 							</Events>
 						</PlannerField>
@@ -476,8 +495,8 @@
 					<currentLevel xmlns="http://v8.1c.ru/8.2/data/chart">0</currentLevel>
 				</pl:timeScale>
 				<pl:period>
-					<pl:begin>2019-04-16T00:00:00</pl:begin>
-					<pl:end>2019-04-16T23:59:59</pl:end>
+					<pl:begin>2019-04-17T00:00:00</pl:begin>
+					<pl:end>2019-04-17T23:59:59</pl:end>
 				</pl:period>
 				<pl:displayCurrentDate>true</pl:displayCurrentDate>
 				<pl:itemsTimeRepresentation>BeginTime</pl:itemsTimeRepresentation>
@@ -561,9 +580,15 @@
 			<Type>
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
+			<UseAlways>
+				<Field>СписокБлижайшихСобытий.Вакцина</Field>
+				<Field>СписокБлижайшихСобытий.ДатаВакцинации</Field>
+				<Field>СписокБлижайшихСобытий.Инфекция</Field>
+				<Field>СписокБлижайшихСобытий.Ребенок</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>false</DynamicDataRead>
+				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ПрививкиВОчереди.Ребенок КАК Ребенок,
 	МИНИМУМ(ПрививкиВОчереди.ДатаВакцинации) КАК ДатаВакцинации
@@ -586,6 +611,7 @@
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПрививкиВОчереди КАК ПрививкиВОчереди
 		ПО ВТ_БлижайшиеДатыПрививок.Ребенок = ПрививкиВОчереди.Ребенок
 			И ВТ_БлижайшиеДатыПрививок.ДатаВакцинации = ПрививкиВОчереди.ДатаВакцинации</QueryText>
+				<MainTable>InformationRegister.ПрививкиВОчереди</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>

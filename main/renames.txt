@@ -12,7 +12,9 @@ Catalogs\Дети\Forms\ФормаЭлемента\Ext\Form\Module.bsl-->Catalog
 Catalogs\Инфекции\Ext\ManagerModule.bsl-->Catalogs\Инфекции\Ext\ManagerModule.bsl
 Catalogs\Инфекции\Ext\ObjectModule.bsl-->Catalogs\Инфекции\Ext\ObjectModule.bsl
 Catalogs\Инфекции\Ext\Predefined.xml-->Catalogs\Инфекции\Ext\Predefined.xml
+Catalogs\Инфекции\Forms\ФормаСписка.xml-->Catalogs\Инфекции\Forms\ФормаСписка.xml
 Catalogs\Инфекции\Forms\ФормаЭлемента.xml-->Catalogs\Инфекции\Forms\ФормаЭлемента.xml
+Catalogs\Инфекции\Forms\ФормаСписка\Ext\Form.xml-->Catalogs\Инфекции\Forms\ФормаСписка\Ext\Form.xml
 Catalogs\Инфекции\Forms\ФормаЭлемента\Ext\Form.xml-->Catalogs\Инфекции\Forms\ФормаЭлемента\Ext\Form.xml
 Catalogs\Инфекции\Forms\ФормаЭлемента\Ext\Form\Module.bsl-->Catalogs\Инфекции\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 CommonForms\ФормаНастроек.xml-->CommonForms\ФормаНастроек.xml
@@ -41,6 +43,9 @@ CommonModules\РаботаСКалендаремКлиентСервер\Ext\Mod
 CommonModules\РаботаСКалендаремСервер\Ext\Module.bsl-->CommonModules\РаботаСКалендаремСервер\Ext\Module.bsl
 CommonModules\РаботаСПрививкамиПовтИсп\Ext\Module.bsl-->CommonModules\РаботаСПрививкамиПовтИсп\Ext\Module.bsl
 CommonModules\СтроковыеФункцииКлиентСервер\Ext\Module.bsl-->CommonModules\СтроковыеФункцииКлиентСервер\Ext\Module.bsl
+CommonPictures\Внимание.xml-->CommonPictures\Внимание.xml
+CommonPictures\Внимание\Ext\Picture.xml-->CommonPictures\Внимание\Ext\Picture.xml
+CommonPictures\Внимание\Ext\Picture\Picture.png-->CommonPictures\Внимание\Ext\Picture\Picture.png
 Enums\ПериодыОтображенияКалендаря.xml-->Enums\ПериодыОтображенияКалендаря.xml
 Enums\ТипыКалендаряПрививок.xml-->Enums\ТипыКалендаряПрививок.xml
 Ext\HomePageWorkArea.xml-->Ext\HomePageWorkArea.xml

@@ -1,9 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.7">
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.8">
 	<Item id="3c981299-6a06-4fd5-9ce7-9d6f6bff9f15">
 		<Name>ВирусныйГепатитВ</Name>
 		<Code/>
 		<Description>Вирусный гепатит В</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cd9fd7ef-c21a-4b5c-8f35-eebf85c52051">
+		<Name>Грипп</Name>
+		<Code/>
+		<Description>Грипп</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
 	<Item id="d6c7d51a-f5b6-4cd6-9e3a-53bd2fe1d6ed">

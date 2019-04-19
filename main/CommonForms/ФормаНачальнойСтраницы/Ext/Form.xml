@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаОткрытьНастройки" id="68">
@@ -134,12 +134,23 @@
 											<ContextMenu name="СписокБлижайшихСобытийРебенокКонтекстноеМеню" id="44"/>
 											<ExtendedTooltip name="СписокБлижайшихСобытийРебенокРасширеннаяПодсказка" id="45"/>
 										</LabelField>
-										<LabelField name="СписокБлижайшихСобытийИнфекция" id="73" DisplayImportance="VeryHigh">
-											<DataPath>СписокБлижайшихСобытий.Инфекция</DataPath>
-											<HorizontalStretch>true</HorizontalStretch>
-											<ContextMenu name="СписокБлижайшихСобытийИнфекцияКонтекстноеМеню" id="74"/>
-											<ExtendedTooltip name="СписокБлижайшихСобытийИнфекцияРасширеннаяПодсказка" id="75"/>
-										</LabelField>
+										<ColumnGroup name="СписокБлижайшихСобытийГруппа2" id="78">
+											<Group>InCell</Group>
+											<ExtendedTooltip name="СписокБлижайшихСобытийГруппа2РасширеннаяПодсказка" id="79"/>
+											<ChildItems>
+												<LabelField name="СписокБлижайшихСобытийВакцина" id="80">
+													<DataPath>СписокБлижайшихСобытий.Вакцина</DataPath>
+													<ContextMenu name="СписокБлижайшихСобытийВакцинаКонтекстноеМеню" id="81"/>
+													<ExtendedTooltip name="СписокБлижайшихСобытийВакцинаРасширеннаяПодсказка" id="82"/>
+												</LabelField>
+												<LabelField name="СписокБлижайшихСобытийИнфекция" id="73" DisplayImportance="VeryHigh">
+													<DataPath>СписокБлижайшихСобытий.Инфекция</DataPath>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ContextMenu name="СписокБлижайшихСобытийИнфекцияКонтекстноеМеню" id="74"/>
+													<ExtendedTooltip name="СписокБлижайшихСобытийИнфекцияРасширеннаяПодсказка" id="75"/>
+												</LabelField>
+											</ChildItems>
+										</ColumnGroup>
 									</ChildItems>
 								</ColumnGroup>
 								<LabelField name="СписокБлижайшихСобытийДатаВакцинации" id="70" DisplayImportance="Usual">
@@ -497,8 +508,8 @@
 					<currentLevel xmlns="http://v8.1c.ru/8.2/data/chart">0</currentLevel>
 				</pl:timeScale>
 				<pl:period>
-					<pl:begin>2019-04-17T00:00:00</pl:begin>
-					<pl:end>2019-04-17T23:59:59</pl:end>
+					<pl:begin>2019-04-19T00:00:00</pl:begin>
+					<pl:end>2019-04-19T23:59:59</pl:end>
 				</pl:period>
 				<pl:displayCurrentDate>true</pl:displayCurrentDate>
 				<pl:itemsTimeRepresentation>BeginTime</pl:itemsTimeRepresentation>
@@ -607,7 +618,8 @@
 	ВТ_БлижайшиеДатыПрививок.Ребенок КАК Ребенок,
 	ПрививкиВОчереди.Вакцина КАК Вакцина,
 	ВТ_БлижайшиеДатыПрививок.ДатаВакцинации КАК ДатаВакцинации,
-	ПрививкиВОчереди.Инфекция КАК Инфекция
+	ПрививкиВОчереди.Инфекция КАК Инфекция,
+	ПрививкиВОчереди.ЕстьЗаписьКВрачу КАК ЕстьЗаписьКВрачу
 ИЗ
 	ВТ_БлижайшиеДатыПрививок КАК ВТ_БлижайшиеДатыПрививок
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПрививкиВОчереди КАК ПрививкиВОчереди
@@ -628,6 +640,22 @@
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
 					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ЕстьЗаписьКВрачу</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:GreenYellow</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
 					</dcsset:conditionalAppearance>

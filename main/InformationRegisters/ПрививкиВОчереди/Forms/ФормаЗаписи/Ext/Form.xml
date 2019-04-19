@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<InputField name="Ребенок" id="1">
 			<DataPath>Запись.Ребенок</DataPath>
+			<QuickChoice>false</QuickChoice>
+			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 			<ContextMenu name="РебенокКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="РебенокРасширеннаяПодсказка" id="3"/>
 			<Events>
@@ -18,6 +21,8 @@
 		</InputField>
 		<InputField name="Инфекция" id="7">
 			<DataPath>Запись.Инфекция</DataPath>
+			<QuickChoice>false</QuickChoice>
+			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 			<ContextMenu name="ИнфекцияКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ИнфекцияРасширеннаяПодсказка" id="9"/>
 		</InputField>
@@ -80,11 +85,71 @@
 		</UsualGroup>
 		<InputField name="ДатаВакцинации" id="10">
 			<DataPath>Запись.ДатаВакцинации</DataPath>
+			<HorizontalStretch>true</HorizontalStretch>
 			<ContextMenu name="ДатаВакцинацииКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="ДатаВакцинацииРасширеннаяПодсказка" id="12"/>
 			<Events>
 				<Event name="OnChange">ДатаВакцинацииПриИзменении</Event>
 			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаЗаписьКВрачу" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запись к врачу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа запись к врачу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаЗаписьКВрачуРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<CheckBoxField name="ЕстьЗаписьКВрачу" id="24">
+					<DataPath>Запись.ЕстьЗаписьКВрачу</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЕстьЗаписьКВрачуКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ЕстьЗаписьКВрачуРасширеннаяПодсказка" id="26"/>
+					<Events>
+						<Event name="OnChange">ЕстьЗаписьКВрачуПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ВремяЗаписи" id="27">
+					<DataPath>Запись.ВремяЗаписи</DataPath>
+					<HorizontalStretch>true</HorizontalStretch>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=ЧЧ:мм</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ВремяЗаписиКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ВремяЗаписиРасширеннаяПодсказка" id="29"/>
+					<Events>
+						<Event name="OnChange">ВремяЗаписиПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="32">
+			<DataPath>Запись.Комментарий</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<HorizontalStretch>true</HorizontalStretch>
+			<MultiLine>true</MultiLine>
+			<BackColor>style:ToolTipBackColor</BackColor>
+			<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="34"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>

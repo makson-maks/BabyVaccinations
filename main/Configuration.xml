@@ -92,7 +92,7 @@
 				</v8:pair>
 				<v8:pair>
 					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">LocalNotification</v8:Key>
-					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+					<v8:Value xsi:type="xs:boolean">true</v8:Value>
 				</v8:pair>
 				<v8:pair>
 					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Print</v8:Key>
@@ -139,6 +139,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonPicture>Внимание</CommonPicture>
+			<CommonPicture>ЗеленаяГалочка</CommonPicture>
 			<CommonModule>ОбновлениеИнформационнойБазыВызовСервера</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыСервер</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыСлужебный</CommonModule>
@@ -149,6 +150,7 @@
 			<CommonModule>РаботаСКалендаремСервер</CommonModule>
 			<CommonModule>РаботаСПрививкамиПовтИсп</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
+			<CommonModule>РаботаСУведомлениямиКлиент</CommonModule>
 			<CommonForm>ФормаНачальнойСтраницы</CommonForm>
 			<CommonForm>ФормаНастроек</CommonForm>
 			<Catalog>Дети</Catalog>
@@ -159,6 +161,7 @@
 			<InformationRegister>АналогиПрививок</InformationRegister>
 			<InformationRegister>ВерсииПодсистем</InformationRegister>
 			<InformationRegister>ПрививкиВОчереди</InformationRegister>
+			<InformationRegister>ВыполненныеВакцинации</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

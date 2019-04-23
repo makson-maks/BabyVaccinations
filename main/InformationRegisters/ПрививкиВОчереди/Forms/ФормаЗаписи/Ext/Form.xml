@@ -11,6 +11,7 @@
 	<ChildItems>
 		<InputField name="Ребенок" id="1">
 			<DataPath>Запись.Ребенок</DataPath>
+			<ClearButton>true</ClearButton>
 			<QuickChoice>false</QuickChoice>
 			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 			<ContextMenu name="РебенокКонтекстноеМеню" id="2"/>
@@ -21,6 +22,7 @@
 		</InputField>
 		<InputField name="Инфекция" id="7">
 			<DataPath>Запись.Инфекция</DataPath>
+			<ClearButton>true</ClearButton>
 			<QuickChoice>false</QuickChoice>
 			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 			<ContextMenu name="ИнфекцияКонтекстноеМеню" id="8"/>
@@ -28,6 +30,7 @@
 		</InputField>
 		<InputField name="Вакцина" id="4">
 			<DataPath>Запись.Вакцина</DataPath>
+			<ClearButton>true</ClearButton>
 			<QuickChoice>false</QuickChoice>
 			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 			<ContextMenu name="ВакцинаКонтекстноеМеню" id="5"/>
@@ -50,12 +53,12 @@
 				</v8:item>
 			</ToolTip>
 			<HorizontalStretch>true</HorizontalStretch>
-			<Group>Vertical</Group>
 			<ExtendedTooltip name="ГруппаВозрастВакцинацииРасширеннаяПодсказка" id="23"/>
 			<ChildItems>
 				<InputField name="Лет" id="13">
 					<DataPath>Лет</DataPath>
-					<HorizontalStretch>true</HorizontalStretch>
+					<HorizontalStretch>false</HorizontalStretch>
+					<BackColor>web:AntiqueWhite</BackColor>
 					<ContextMenu name="ЛетКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="ЛетРасширеннаяПодсказка" id="15"/>
 					<Events>
@@ -64,7 +67,8 @@
 				</InputField>
 				<InputField name="Месяцев" id="16">
 					<DataPath>Месяцев</DataPath>
-					<HorizontalStretch>true</HorizontalStretch>
+					<HorizontalStretch>false</HorizontalStretch>
+					<BackColor>web:AntiqueWhite</BackColor>
 					<ContextMenu name="МесяцевКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="МесяцевРасширеннаяПодсказка" id="18"/>
 					<Events>
@@ -73,8 +77,9 @@
 				</InputField>
 				<InputField name="Недель" id="19">
 					<DataPath>Недель</DataPath>
-					<HorizontalStretch>true</HorizontalStretch>
+					<HorizontalStretch>false</HorizontalStretch>
 					<MaxValue xsi:type="xs:decimal">3</MaxValue>
+					<BackColor>web:AntiqueWhite</BackColor>
 					<ContextMenu name="НедельКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="НедельРасширеннаяПодсказка" id="21"/>
 					<Events>
@@ -151,6 +156,17 @@
 			<ContextMenu name="КомментарийКонтекстноеМеню" id="33"/>
 			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="34"/>
 		</InputField>
+		<Button name="ПодтвердитьВакцинацию" id="35">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<CommandName>Form.Command.ПодтвердитьВакцинацию</CommandName>
+			<BackColor>web:Gainsboro</BackColor>
+			<BorderColor>style:ButtonBorderColor</BorderColor>
+			<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+			<Shape>Oval</Shape>
+			<ExtendedTooltip name="ПодтвердитьВакцинациюРасширеннаяПодсказка" id="36"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Запись" id="1">
@@ -209,4 +225,26 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ПодтвердитьВакцинацию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подтвердить вакцинацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подтвердить вакцинацию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗеленаяГалочка</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПодтвердитьВакцинацию</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
 </Form>

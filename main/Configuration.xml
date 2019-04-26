@@ -149,8 +149,8 @@
 			<CommonModule>РаботаСКалендаремКлиентСервер</CommonModule>
 			<CommonModule>РаботаСКалендаремСервер</CommonModule>
 			<CommonModule>РаботаСПрививкамиПовтИсп</CommonModule>
-			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>РаботаСУведомлениямиКлиент</CommonModule>
+			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonForm>ФормаНачальнойСтраницы</CommonForm>
 			<CommonForm>ФормаНастроек</CommonForm>
 			<Catalog>Дети</Catalog>

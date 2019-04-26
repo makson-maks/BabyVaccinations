@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<EditMode>EnterOnInput</EditMode>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font ref="style:СтильНаименования" kind="StyleItem"/>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Pages name="Страницы" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<Page name="СтраницаСведения" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сведения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница сведения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ChildrenAlign>ItemsRightTitlesLeft</ChildrenAlign>
+					<ExtendedTooltip name="СтраницаСведенияРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<InputField name="ТипВакциныПоКоличествуИнфекцийОтКоторыхОнаЗащищает" id="7">
+							<DataPath>Объект.ТипВакциныПоКоличествуИнфекцийОтКоторыхОнаЗащищает</DataPath>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ТипВакциныПоКоличествуИнфекцийОтКоторыхОнаЗащищаетКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ТипВакциныПоКоличествуИнфекцийОтКоторыхОнаЗащищаетРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<CheckBoxField name="Отечественная" id="16">
+							<DataPath>Объект.Отечественная</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОтечественнаяКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ОтечественнаяРасширеннаяПодсказка" id="18"/>
+						</CheckBoxField>
+						<CheckBoxField name="Бесплатная" id="13">
+							<DataPath>Объект.Бесплатная</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="БесплатнаяКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="БесплатнаяРасширеннаяПодсказка" id="15"/>
+						</CheckBoxField>
+						<InputField name="СредняяСтоимость" id="10">
+							<DataPath>Объект.СредняяСтоимость</DataPath>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="СредняяСтоимостьКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="СредняяСтоимостьРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="Описание" id="4">
+							<DataPath>Объект.Описание</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ОписаниеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаИнфекции" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инфекции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница инфекции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаИнфекцииРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<Table name="Инфекции" id="19">
+							<Representation>List</Representation>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Инфекции</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ИнфекцииКонтекстноеМеню" id="20"/>
+							<AutoCommandBar name="ИнфекцииКоманднаяПанель" id="21">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ИнфекцииРасширеннаяПодсказка" id="22"/>
+							<SearchStringAddition name="ИнфекцииСтрокаПоиска" id="23">
+								<AdditionSource>
+									<Item>Инфекции</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИнфекцииСтрокаПоискаКонтекстноеМеню" id="24"/>
+								<ExtendedTooltip name="ИнфекцииСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИнфекцииСостояниеПросмотра" id="26">
+								<AdditionSource>
+									<Item>Инфекции</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИнфекцииСостояниеПросмотраКонтекстноеМеню" id="27"/>
+								<ExtendedTooltip name="ИнфекцииСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИнфекцииУправлениеПоиском" id="29">
+								<AdditionSource>
+									<Item>Инфекции</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИнфекцииУправлениеПоискомКонтекстноеМеню" id="30"/>
+								<ExtendedTooltip name="ИнфекцииУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ИнфекцииПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ИнфекцииИнфекция" id="35">
+									<DataPath>Объект.Инфекции.Инфекция</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИнфекцииИнфекцияКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ИнфекцииИнфекцияРасширеннаяПодсказка" id="37"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Вакцины</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

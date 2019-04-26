@@ -14,7 +14,7 @@
 			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 			<EditMode>EnterOnInput</EditMode>
 			<HorizontalStretch>true</HorizontalStretch>
-			<Font ref="style:LargeTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<Font ref="style:СтильНаименования" kind="StyleItem"/>
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
 		</InputField>

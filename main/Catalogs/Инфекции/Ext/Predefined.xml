@@ -6,6 +6,12 @@
 		<Description>Вирусный гепатит В</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="400b7d4d-3758-4a91-83b6-21505223b922">
+		<Name>ГемофильнаяИнфекция</Name>
+		<Code/>
+		<Description>Гемофильная инфекция</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
 	<Item id="cd9fd7ef-c21a-4b5c-8f35-eebf85c52051">
 		<Name>Грипп</Name>
 		<Code/>

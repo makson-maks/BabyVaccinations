@@ -315,6 +315,7 @@
 							<Events>
 								<Event name="BeforeCreate">ПланировщикКалендарьПрививокПередСозданием</Event>
 								<Event name="BeforeDelete">ПланировщикКалендарьПрививокПередУдалением</Event>
+								<Event name="BeforeStartEdit">ПланировщикКалендарьПрививокПередНачаломРедактирования</Event>
 								<Event name="BeforeStartQuickEdit">ПланировщикКалендарьПрививокПередНачаломБыстрогоРедактирования</Event>
 							</Events>
 						</PlannerField>

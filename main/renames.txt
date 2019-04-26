@@ -6,8 +6,14 @@ Catalogs\Инфекции.xml-->Catalogs\Инфекции.xml
 Catalogs\Вакцины\Ext\ManagerModule.bsl-->Catalogs\Вакцины\Ext\ManagerModule.bsl
 Catalogs\Вакцины\Ext\Predefined.xml-->Catalogs\Вакцины\Ext\Predefined.xml
 Catalogs\Вакцины\Forms\ФормаВыбора.xml-->Catalogs\Вакцины\Forms\ФормаВыбора.xml
+Catalogs\Вакцины\Forms\ФормаСписка.xml-->Catalogs\Вакцины\Forms\ФормаСписка.xml
+Catalogs\Вакцины\Forms\ФормаЭлемента.xml-->Catalogs\Вакцины\Forms\ФормаЭлемента.xml
 Catalogs\Вакцины\Forms\ФормаВыбора\Ext\Form.xml-->Catalogs\Вакцины\Forms\ФормаВыбора\Ext\Form.xml
 Catalogs\Вакцины\Forms\ФормаВыбора\Ext\Form\Module.bsl-->Catalogs\Вакцины\Forms\ФормаВыбора\Ext\Form\Module.bsl
+Catalogs\Вакцины\Forms\ФормаСписка\Ext\Form.xml-->Catalogs\Вакцины\Forms\ФормаСписка\Ext\Form.xml
+Catalogs\Вакцины\Forms\ФормаСписка\Ext\Form\Module.bsl-->Catalogs\Вакцины\Forms\ФормаСписка\Ext\Form\Module.bsl
+Catalogs\Вакцины\Forms\ФормаЭлемента\Ext\Form.xml-->Catalogs\Вакцины\Forms\ФормаЭлемента\Ext\Form.xml
+Catalogs\Вакцины\Forms\ФормаЭлемента\Ext\Form\Module.bsl-->Catalogs\Вакцины\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 Catalogs\Дети\Ext\ObjectModule.bsl-->Catalogs\Дети\Ext\ObjectModule.bsl
 Catalogs\Дети\Forms\ФормаЭлемента.xml-->Catalogs\Дети\Forms\ФормаЭлемента.xml
 Catalogs\Дети\Forms\ФормаЭлемента\Ext\Form.xml-->Catalogs\Дети\Forms\ФормаЭлемента\Ext\Form.xml
@@ -55,6 +61,7 @@ CommonPictures\Внимание\Ext\Picture\Picture.png-->CommonPictures\Вни�
 CommonPictures\ЗеленаяГалочка\Ext\Picture.xml-->CommonPictures\ЗеленаяГалочка\Ext\Picture.xml
 CommonPictures\ЗеленаяГалочка\Ext\Picture\Picture.png-->CommonPictures\ЗеленаяГалочка\Ext\Picture\Picture.png
 Enums\ПериодыОтображенияКалендаря.xml-->Enums\ПериодыОтображенияКалендаря.xml
+Enums\ТипыВакциныПоКоличествуИнфекцийОтКоторыхОниЗащищают.xml-->Enums\ТипыВакциныПоКоличествуИнфекцийОтКоторыхОниЗащищают.xml
 Enums\ТипыКалендаряПрививок.xml-->Enums\ТипыКалендаряПрививок.xml
 Ext\HomePageWorkArea.xml-->Ext\HomePageWorkArea.xml
 Ext\MainSectionCommandInterface.xml-->Ext\MainSectionCommandInterface.xml
@@ -74,3 +81,6 @@ InformationRegisters\ПрививкиВОчереди\Forms\ФормаЗапис
 InformationRegisters\ПрививкиВОчереди\Forms\ФормаСписка\Ext\Form.xml-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаСписка\Ext\Form.xml
 InformationRegisters\ПрививкиВОчереди\Forms\ФормаСписка\Ext\Form\Module.bsl-->InformationRegisters\ПрививкиВОчереди\Forms\ФормаСписка\Ext\Form\Module.bsl
 Languages\Русский.xml-->Languages\Русский.xml
+StyleItems\СтильНаименования.xml-->StyleItems\СтильНаименования.xml
+StyleItems\СтильЦветПредупрежденияОВакцинах.xml-->StyleItems\СтильЦветПредупрежденияОВакцинах.xml
+StyleItems\СтильШрифтПредупрежденияОВакцинах.xml-->StyleItems\СтильШрифтПредупрежденияОВакцинах.xml

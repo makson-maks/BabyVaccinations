@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.8">
-	<Item id="7aacbf8c-c5f8-4eb1-9c69-564ff1d96cb5">
-		<Name>Пентаксим</Name>
+	<Item id="72bd173a-4a2d-4162-957c-6b7abb584efa">
+		<Name>ИнфанриксГекса</Name>
 		<Code/>
-		<Description>Пентаксим</Description>
+		<Description>Инфанрикс гекса</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
 	<Item id="85dd5081-2422-45c5-bb7f-5e29fa0028f8">
@@ -12,16 +12,10 @@
 		<Description>Регевак В</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item id="39eff5bc-8faf-4137-b8e4-1122aecaebaf">
-		<Name>Рототек</Name>
+	<Item id="7e60ae63-e6f6-4ead-b93f-8750bf823cc5">
+		<Name>ЭнджериксВ</Name>
 		<Code/>
-		<Description>Рототек</Description>
-		<IsFolder>false</IsFolder>
-	</Item>
-	<Item id="13ca487a-9715-4f9b-a729-d7ef0ed9d040">
-		<Name>ЭуваксВ</Name>
-		<Code/>
-		<Description>Эувакс В</Description>
+		<Description>Энджерикс В</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
 </PredefinedData>

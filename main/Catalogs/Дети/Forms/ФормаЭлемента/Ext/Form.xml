@@ -12,7 +12,6 @@
 			<HorizontalAlign>Right</HorizontalAlign>
 			<EditMode>EnterOnInput</EditMode>
 			<HorizontalStretch>true</HorizontalStretch>
-			<BackColor>web:Linen</BackColor>
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
 		</InputField>
@@ -21,25 +20,24 @@
 			<HorizontalAlign>Right</HorizontalAlign>
 			<EditMode>EnterOnInput</EditMode>
 			<HorizontalStretch>true</HorizontalStretch>
-			<BackColor>web:Linen</BackColor>
 			<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="6"/>
 		</InputField>
-		<InputField name="ТипКалендаря" id="7">
-			<DataPath>Объект.ТипКалендаря</DataPath>
-			<HorizontalAlign>Right</HorizontalAlign>
-			<HorizontalStretch>true</HorizontalStretch>
-			<BackColor>web:Linen</BackColor>
-			<ContextMenu name="ТипКалендаряКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="ТипКалендаряРасширеннаяПодсказка" id="9"/>
-			<Events>
-				<Event name="OnChange">ТипКалендаряПриИзменении</Event>
-			</Events>
+		<InputField name="Календарь" id="14">
+			<DataPath>Объект.Календарь</DataPath>
+			<ClearButton>false</ClearButton>
+			<OpenButton>true</OpenButton>
+			<QuickChoice>false</QuickChoice>
+			<AutoShowClearButtonMode>FilledOnly</AutoShowClearButtonMode>
+			<AutoShowOpenButtonMode>FilledOnly</AutoShowOpenButtonMode>
+			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+			<ContextMenu name="КалендарьКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="КалендарьРасширеннаяПодсказка" id="16"/>
 		</InputField>
-		<Button name="СформироватьНациональныйКалендарьПрививок" id="12">
+		<Button name="СформироватьКалендарьПрививок" id="12">
 			<Type>UsualButton</Type>
-			<CommandName>Form.Command.СформироватьНациональныйКалендарьПрививок</CommandName>
-			<ExtendedTooltip name="СформироватьНациональныйКалендарьПрививокРасширеннаяПодсказка" id="13"/>
+			<CommandName>Form.Command.СформироватьКалендарьПрививок</CommandName>
+			<ExtendedTooltip name="СформироватьКалендарьПрививокРасширеннаяПодсказка" id="13"/>
 		</Button>
 	</ChildItems>
 	<Attributes>
@@ -52,7 +50,7 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="СформироватьНациональныйКалендарьПрививок" id="1">
+		<Command name="СформироватьКалендарьПрививок" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -62,14 +60,14 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сформировать национальный календарь прививок</v8:content>
+					<v8:content>Сформировать календарь прививок</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>СформироватьНациональныйКалендарьПрививок</Action>
+			<Action>СформироватьКалендарьПрививок</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>

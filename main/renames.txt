@@ -3,6 +3,7 @@ Configuration.xml-->Configuration.xml
 Catalogs\Вакцины.xml-->Catalogs\Вакцины.xml
 Catalogs\Дети.xml-->Catalogs\Дети.xml
 Catalogs\Инфекции.xml-->Catalogs\Инфекции.xml
+Catalogs\КалендариПрививок.xml-->Catalogs\КалендариПрививок.xml
 Catalogs\Вакцины\Ext\ManagerModule.bsl-->Catalogs\Вакцины\Ext\ManagerModule.bsl
 Catalogs\Вакцины\Ext\Predefined.xml-->Catalogs\Вакцины\Ext\Predefined.xml
 Catalogs\Вакцины\Forms\ФормаВыбора.xml-->Catalogs\Вакцины\Forms\ФормаВыбора.xml
@@ -26,6 +27,14 @@ Catalogs\Инфекции\Forms\ФормаЭлемента.xml-->Catalogs\Инф
 Catalogs\Инфекции\Forms\ФормаСписка\Ext\Form.xml-->Catalogs\Инфекции\Forms\ФормаСписка\Ext\Form.xml
 Catalogs\Инфекции\Forms\ФормаЭлемента\Ext\Form.xml-->Catalogs\Инфекции\Forms\ФормаЭлемента\Ext\Form.xml
 Catalogs\Инфекции\Forms\ФормаЭлемента\Ext\Form\Module.bsl-->Catalogs\Инфекции\Forms\ФормаЭлемента\Ext\Form\Module.bsl
+Catalogs\КалендариПрививок\Ext\ManagerModule.bsl-->Catalogs\КалендариПрививок\Ext\ManagerModule.bsl
+Catalogs\КалендариПрививок\Ext\ObjectModule.bsl-->Catalogs\КалендариПрививок\Ext\ObjectModule.bsl
+Catalogs\КалендариПрививок\Ext\Predefined.xml-->Catalogs\КалендариПрививок\Ext\Predefined.xml
+Catalogs\КалендариПрививок\Forms\ФормаСписка.xml-->Catalogs\КалендариПрививок\Forms\ФормаСписка.xml
+Catalogs\КалендариПрививок\Forms\ФормаЭлемента.xml-->Catalogs\КалендариПрививок\Forms\ФормаЭлемента.xml
+Catalogs\КалендариПрививок\Forms\ФормаСписка\Ext\Form.xml-->Catalogs\КалендариПрививок\Forms\ФормаСписка\Ext\Form.xml
+Catalogs\КалендариПрививок\Forms\ФормаЭлемента\Ext\Form.xml-->Catalogs\КалендариПрививок\Forms\ФормаЭлемента\Ext\Form.xml
+Catalogs\КалендариПрививок\Forms\ФормаЭлемента\Ext\Form\Module.bsl-->Catalogs\КалендариПрививок\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 CommonForms\ФормаНастроек.xml-->CommonForms\ФормаНастроек.xml
 CommonForms\ФормаНачальнойСтраницы.xml-->CommonForms\ФормаНачальнойСтраницы.xml
 CommonForms\ФормаНастроек\Ext\Form.xml-->CommonForms\ФормаНастроек\Ext\Form.xml

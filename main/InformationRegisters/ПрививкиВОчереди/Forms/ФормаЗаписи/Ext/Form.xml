@@ -9,36 +9,49 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Ребенок" id="1">
-			<DataPath>Запись.Ребенок</DataPath>
-			<ClearButton>true</ClearButton>
-			<QuickChoice>false</QuickChoice>
-			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
-			<ContextMenu name="РебенокКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="РебенокРасширеннаяПодсказка" id="3"/>
-			<Events>
-				<Event name="OnChange">РебенокПриИзменении</Event>
-			</Events>
-		</InputField>
-		<InputField name="Инфекция" id="7">
-			<DataPath>Запись.Инфекция</DataPath>
-			<ClearButton>true</ClearButton>
-			<QuickChoice>false</QuickChoice>
-			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
-			<ContextMenu name="ИнфекцияКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="ИнфекцияРасширеннаяПодсказка" id="9"/>
-		</InputField>
-		<InputField name="Вакцина" id="4">
-			<DataPath>Запись.Вакцина</DataPath>
-			<ClearButton>true</ClearButton>
-			<QuickChoice>false</QuickChoice>
-			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
-			<ContextMenu name="ВакцинаКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="ВакцинаРасширеннаяПодсказка" id="6"/>
-			<Events>
-				<Event name="StartChoice">ВакцинаНачалоВыбора</Event>
-			</Events>
-		</InputField>
+		<UsualGroup name="Группа1" id="39">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<InputField name="Ребенок" id="1">
+					<DataPath>Запись.Ребенок</DataPath>
+					<ClearButton>true</ClearButton>
+					<QuickChoice>false</QuickChoice>
+					<BackColor>style:СтильПоляВводаЦвет</BackColor>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="РебенокКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="РебенокРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">РебенокПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Инфекция" id="7">
+					<DataPath>Запись.Инфекция</DataPath>
+					<ClearButton>true</ClearButton>
+					<QuickChoice>false</QuickChoice>
+					<BackColor>style:СтильПоляВводаЦвет</BackColor>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="ИнфекцияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ИнфекцияРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="Вакцина" id="4">
+					<DataPath>Запись.Вакцина</DataPath>
+					<ClearButton>true</ClearButton>
+					<QuickChoice>false</QuickChoice>
+					<BackColor>style:СтильПоляВводаЦвет</BackColor>
+					<AutoShowClearButtonMode>Always</AutoShowClearButtonMode>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="ВакцинаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ВакцинаРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="StartChoice">ВакцинаНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаВозрастВакцинации" id="22">
 			<Title>
 				<v8:item>
@@ -58,7 +71,7 @@
 				<InputField name="Лет" id="13">
 					<DataPath>Лет</DataPath>
 					<HorizontalStretch>false</HorizontalStretch>
-					<BackColor>web:AntiqueWhite</BackColor>
+					<BackColor>style:СтильПоляВводаЦвет</BackColor>
 					<ContextMenu name="ЛетКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="ЛетРасширеннаяПодсказка" id="15"/>
 					<Events>
@@ -68,7 +81,7 @@
 				<InputField name="Месяцев" id="16">
 					<DataPath>Месяцев</DataPath>
 					<HorizontalStretch>false</HorizontalStretch>
-					<BackColor>web:AntiqueWhite</BackColor>
+					<BackColor>style:СтильПоляВводаЦвет</BackColor>
 					<ContextMenu name="МесяцевКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="МесяцевРасширеннаяПодсказка" id="18"/>
 					<Events>
@@ -79,7 +92,7 @@
 					<DataPath>Недель</DataPath>
 					<HorizontalStretch>false</HorizontalStretch>
 					<MaxValue xsi:type="xs:decimal">3</MaxValue>
-					<BackColor>web:AntiqueWhite</BackColor>
+					<BackColor>style:СтильПоляВводаЦвет</BackColor>
 					<ContextMenu name="НедельКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="НедельРасширеннаяПодсказка" id="21"/>
 					<Events>
@@ -91,6 +104,7 @@
 		<InputField name="ДатаВакцинации" id="10">
 			<DataPath>Запись.ДатаВакцинации</DataPath>
 			<HorizontalStretch>true</HorizontalStretch>
+			<BackColor>style:СтильПоляВводаЦвет</BackColor>
 			<ContextMenu name="ДатаВакцинацииКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="ДатаВакцинацииРасширеннаяПодсказка" id="12"/>
 			<Events>
@@ -132,6 +146,7 @@
 							<v8:content>ДФ=ЧЧ:мм</v8:content>
 						</v8:item>
 					</EditFormat>
+					<BackColor>style:СтильПоляВводаЦвет</BackColor>
 					<ContextMenu name="ВремяЗаписиКонтекстноеМеню" id="28"/>
 					<ExtendedTooltip name="ВремяЗаписиРасширеннаяПодсказка" id="29"/>
 					<Events>
@@ -145,7 +160,7 @@
 			<TitleLocation>None</TitleLocation>
 			<HorizontalStretch>true</HorizontalStretch>
 			<MultiLine>true</MultiLine>
-			<BackColor>style:ToolTipBackColor</BackColor>
+			<BackColor>style:СтильПоляВводаЦвет</BackColor>
 			<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
 			<InputHint>
 				<v8:item>

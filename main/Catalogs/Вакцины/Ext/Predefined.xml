@@ -1,15 +1,57 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.8">
+	<Item id="2cc7a8ac-35d4-4c1c-94d9-e076676c8248">
+		<Name>АктХИБ</Name>
+		<Code/>
+		<Description>Акт-ХИБ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="23e68257-0df5-4ee7-b3e5-06b5ccfc8d92">
+		<Name>Ваксигрип</Name>
+		<Code/>
+		<Description>Ваксигрип</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b15b9568-7abe-4802-aa33-88ac3287415d">
+		<Name>ГрипполПлюс</Name>
+		<Code/>
+		<Description>Гриппол плюс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
 	<Item id="72bd173a-4a2d-4162-957c-6b7abb584efa">
 		<Name>ИнфанриксГекса</Name>
 		<Code/>
 		<Description>Инфанрикс гекса</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="07d53ea0-d527-4e60-808c-eae2486a6434">
+		<Name>Пентаксим</Name>
+		<Code/>
+		<Description>Пентаксим</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
 	<Item id="85dd5081-2422-45c5-bb7f-5e29fa0028f8">
 		<Name>РегевакВ</Name>
 		<Code/>
 		<Description>Регевак В</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2506cb45-629a-41c7-9c39-44bcf46bc12f">
+		<Name>Ультрикс</Name>
+		<Code/>
+		<Description>Ультрикс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="44046b2e-0cbd-45e3-a6d0-66aad771d581">
+		<Name>Флюарикс</Name>
+		<Code/>
+		<Description>Флюарикс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8e505a34-336c-43a1-bf49-9b33ea3461dc">
+		<Name>Хиберикс</Name>
+		<Code/>
+		<Description>Хиберикс</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
 	<Item id="7e60ae63-e6f6-4ead-b93f-8750bf823cc5">

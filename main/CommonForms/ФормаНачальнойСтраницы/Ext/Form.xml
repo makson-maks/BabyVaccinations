@@ -29,15 +29,13 @@
 					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</ToolTip>
-			<HorizontalStretch>true</HorizontalStretch>
-			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
 				<Page name="СтраницаБлижайшиеСобытия" id="22">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ближайшие события</v8:content>
+							<v8:content>Ближайшие  события</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
@@ -50,7 +48,6 @@
 					<ChildItems>
 						<Table name="СписокБлижайшихСобытий" id="24">
 							<CommandBarLocation>Bottom</CommandBarLocation>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>СписокБлижайшихСобытий</DataPath>
 							<CommandSet>
@@ -130,6 +127,7 @@
 									<ChildItems>
 										<LabelField name="СписокБлижайшихСобытийРебенок" id="43" DisplayImportance="VeryHigh">
 											<DataPath>СписокБлижайшихСобытий.Ребенок</DataPath>
+											<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 											<HorizontalStretch>true</HorizontalStretch>
 											<ContextMenu name="СписокБлижайшихСобытийРебенокКонтекстноеМеню" id="44"/>
 											<ExtendedTooltip name="СписокБлижайшихСобытийРебенокРасширеннаяПодсказка" id="45"/>
@@ -140,12 +138,16 @@
 											<ChildItems>
 												<LabelField name="СписокБлижайшихСобытийВакцина" id="80">
 													<DataPath>СписокБлижайшихСобытий.Вакцина</DataPath>
+													<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
 													<ContextMenu name="СписокБлижайшихСобытийВакцинаКонтекстноеМеню" id="81"/>
 													<ExtendedTooltip name="СписокБлижайшихСобытийВакцинаРасширеннаяПодсказка" id="82"/>
 												</LabelField>
 												<LabelField name="СписокБлижайшихСобытийИнфекция" id="73" DisplayImportance="VeryHigh">
 													<DataPath>СписокБлижайшихСобытий.Инфекция</DataPath>
+													<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 													<HorizontalStretch>true</HorizontalStretch>
+													<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
 													<ContextMenu name="СписокБлижайшихСобытийИнфекцияКонтекстноеМеню" id="74"/>
 													<ExtendedTooltip name="СписокБлижайшихСобытийИнфекцияРасширеннаяПодсказка" id="75"/>
 												</LabelField>
@@ -155,6 +157,7 @@
 								</ColumnGroup>
 								<LabelField name="СписокБлижайшихСобытийДатаВакцинации" id="70" DisplayImportance="Usual">
 									<DataPath>СписокБлижайшихСобытий.ДатаВакцинации</DataPath>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 									<MaxWidth>2</MaxWidth>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="СписокБлижайшихСобытийДатаВакцинацииКонтекстноеМеню" id="71"/>
@@ -174,35 +177,22 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Страница календарь прививок</v8:content>
+							<v8:content>Календарь</v8:content>
 						</v8:item>
 					</ToolTip>
 					<ExtendedTooltip name="СтраницаКалендарьПрививокРасширеннаяПодсказка" id="4"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаНастройкаПериодичности" id="11">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа настройка периодичности</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа настройка периодичности</v8:content>
-								</v8:item>
-							</ToolTip>
+						<UsualGroup name="Группа1" id="85">
 							<HorizontalStretch>true</HorizontalStretch>
 							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаНастройкаПериодичностиРасширеннаяПодсказка" id="12"/>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="86"/>
 							<ChildItems>
 								<RadioButtonField name="ПериодичностьПланировщика" id="8">
 									<DataPath>ПериодичностьПланировщика</DataPath>
 									<TitleLocation>None</TitleLocation>
-									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 									<RadioButtonType>Tumbler</RadioButtonType>
 									<ChoiceList>
 										<xr:Item>
@@ -251,58 +241,93 @@
 										<Event name="OnChange">ПериодичностьПланировщикаПриИзменении</Event>
 									</Events>
 								</RadioButtonField>
-								<UsualGroup name="ГруппаПредставлениеПериодичности" id="16">
+								<Button name="ПоказатьТекущуюДату" id="83">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПоказатьТекущуюДату</CommandName>
+									<BackColor>web:AliceBlue</BackColor>
+									<BorderColor>style:AccentColor</BorderColor>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа представление периодичности</v8:content>
+											<v8:content>Текущая дата</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа представление периодичности</v8:content>
-										</v8:item>
-									</ToolTip>
+									<Shape>Oval</Shape>
+									<ShapeRepresentation>Always</ShapeRepresentation>
+									<ExtendedTooltip name="ПоказатьТекущуюДатуРасширеннаяПодсказка" id="84"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНастройкаПериодичности" id="11">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройка периодичности</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройка периодичности</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкаПериодичностиРасширеннаяПодсказка" id="12"/>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПредставлениеПериодичности" id="16">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа представление периодичности</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа представление периодичности</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>web:LavenderBlush</BackColor>
+							<ExtendedTooltip name="ГруппаПредставлениеПериодичностиРасширеннаяПодсказка" id="17"/>
+							<ChildItems>
+								<Button name="СдвинутьПериодНазад" id="20">
+									<Type>UsualButton</Type>
 									<HorizontalStretch>true</HorizontalStretch>
 									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-									<Group>AlwaysHorizontal</Group>
+									<CommandName>Form.Command.СдвинутьПериодНазад</CommandName>
+									<BorderColor>style:AccentColor</BorderColor>
+									<Shape>Oval</Shape>
+									<ExtendedTooltip name="СдвинутьПериодНазадРасширеннаяПодсказка" id="21"/>
+								</Button>
+								<InputField name="ПредставлениеТекущейПериодичности" id="13">
+									<DataPath>ПредставлениеТекущейПериодичности</DataPath>
+									<TitleLocation>None</TitleLocation>
 									<HorizontalAlign>Center</HorizontalAlign>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<BackColor>web:LavenderBlush</BackColor>
-									<ExtendedTooltip name="ГруппаПредставлениеПериодичностиРасширеннаяПодсказка" id="17"/>
-									<ChildItems>
-										<Button name="СдвинутьПериодНазад" id="20">
-											<Type>UsualButton</Type>
-											<HorizontalStretch>true</HorizontalStretch>
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-											<CommandName>Form.Command.СдвинутьПериодНазад</CommandName>
-											<BorderColor>style:AccentColor</BorderColor>
-											<Shape>Oval</Shape>
-											<ExtendedTooltip name="СдвинутьПериодНазадРасширеннаяПодсказка" id="21"/>
-										</Button>
-										<InputField name="ПредставлениеТекущейПериодичности" id="13">
-											<DataPath>ПредставлениеТекущейПериодичности</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<HorizontalAlign>Center</HorizontalAlign>
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-											<HorizontalStretch>true</HorizontalStretch>
-											<Font ref="style:NormalTextFont" faceName="Arial Black" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-											<ContextMenu name="ПредставлениеТекущейПериодичностиКонтекстноеМеню" id="14"/>
-											<ExtendedTooltip name="ПредставлениеТекущейПериодичностиРасширеннаяПодсказка" id="15"/>
-										</InputField>
-										<Button name="СдвинутьПериодВперед" id="18">
-											<Type>UsualButton</Type>
-											<HorizontalStretch>true</HorizontalStretch>
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-											<CommandName>Form.Command.СдвинутьПериодВперед</CommandName>
-											<BorderColor>style:AccentColor</BorderColor>
-											<Shape>Oval</Shape>
-											<ExtendedTooltip name="СдвинутьПериодВпередРасширеннаяПодсказка" id="19"/>
-										</Button>
-									</ChildItems>
-								</UsualGroup>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="style:NormalTextFont" faceName="Arial Black" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ПредставлениеТекущейПериодичностиКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ПредставлениеТекущейПериодичностиРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<Button name="СдвинутьПериодВперед" id="18">
+									<Type>UsualButton</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<CommandName>Form.Command.СдвинутьПериодВперед</CommandName>
+									<BorderColor>style:AccentColor</BorderColor>
+									<Shape>Oval</Shape>
+									<ExtendedTooltip name="СдвинутьПериодВпередРасширеннаяПодсказка" id="19"/>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 						<PlannerField name="ПланировщикКалендарьПрививок" id="5">
@@ -314,6 +339,7 @@
 							<ExtendedTooltip name="ПланировщикКалендарьПрививокРасширеннаяПодсказка" id="7"/>
 							<Events>
 								<Event name="BeforeCreate">ПланировщикКалендарьПрививокПередСозданием</Event>
+								<Event name="OnEditEnd">ПланировщикКалендарьПрививокПриОкончанииРедактирования</Event>
 								<Event name="BeforeDelete">ПланировщикКалендарьПрививокПередУдалением</Event>
 								<Event name="BeforeStartEdit">ПланировщикКалендарьПрививокПередНачаломРедактирования</Event>
 								<Event name="BeforeStartQuickEdit">ПланировщикКалендарьПрививокПередНачаломБыстрогоРедактирования</Event>
@@ -331,7 +357,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Страница дети</v8:content>
+							<v8:content>Дети</v8:content>
 						</v8:item>
 					</ToolTip>
 					<ExtendedTooltip name="СтраницаДетиРасширеннаяПодсказка" id="49"/>
@@ -653,7 +679,7 @@
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>ЦветФона</dcscor:parameter>
-									<dcscor:value xsi:type="v8ui:Color">web:GreenYellow</dcscor:value>
+									<dcscor:value xsi:type="v8ui:Color">web:PaleGreen</dcscor:value>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>
@@ -802,6 +828,21 @@
 			</Picture>
 			<Action>ЗапланироватьПрививку</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПоказатьТекущуюДату" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать текущую дату</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать текущую дату</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьТекущуюДату</Action>
 		</Command>
 	</Commands>
 </Form>

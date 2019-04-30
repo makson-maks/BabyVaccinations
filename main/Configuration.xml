@@ -45,7 +45,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>makson_maks</Vendor>
-			<Version>0.0.19</Version>
+			<Version>0.0.20</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -141,6 +141,8 @@
 			<StyleItem>СтильНаименования</StyleItem>
 			<StyleItem>СтильШрифтПредупрежденияОВакцинах</StyleItem>
 			<StyleItem>СтильЦветПредупрежденияОВакцинах</StyleItem>
+			<StyleItem>СтильНадписиВакциныШрифт</StyleItem>
+			<StyleItem>СтильПоляВводаЦвет</StyleItem>
 			<CommonPicture>Внимание</CommonPicture>
 			<CommonPicture>ЗеленаяГалочка</CommonPicture>
 			<CommonModule>ОбновлениеИнформационнойБазыВызовСервера</CommonModule>

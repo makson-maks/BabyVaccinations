@@ -101,7 +101,7 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">СоставКалендаряВыбор</Event>
-				<Event name="OnActivateRow">СоставКалендаряПриАктивизацииСтроки</Event>
+				<Event name="OnActivateField">СоставКалендаряПриАктивизацииПоля</Event>
 			</Events>
 			<ChildItems>
 				<InputField name="СоставКалендаряИнфекция" id="17">

@@ -71,7 +71,6 @@ CommonPictures\ЗеленаяГалочка\Ext\Picture.xml-->CommonPictures\З�
 CommonPictures\ЗеленаяГалочка\Ext\Picture\Picture.png-->CommonPictures\ЗеленаяГалочка\Ext\Picture\Picture.png
 Enums\ПериодыОтображенияКалендаря.xml-->Enums\ПериодыОтображенияКалендаря.xml
 Enums\ТипыВакциныПоКоличествуИнфекцийОтКоторыхОниЗащищают.xml-->Enums\ТипыВакциныПоКоличествуИнфекцийОтКоторыхОниЗащищают.xml
-Enums\ТипыКалендаряПрививок.xml-->Enums\ТипыКалендаряПрививок.xml
 Ext\HomePageWorkArea.xml-->Ext\HomePageWorkArea.xml
 Ext\MainSectionCommandInterface.xml-->Ext\MainSectionCommandInterface.xml
 Ext\ManagedApplicationModule.bsl-->Ext\ManagedApplicationModule.bsl

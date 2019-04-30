@@ -18,13 +18,12 @@
 		<Metadata name="Catalog.Вакцины.Form.ФормаЭлемента.Form" id="eb91d55f-c0f5-46a6-8451-f2d6bcbed047.0" configVersion="7a2515e3fff4734ab4121b8388d8773600000000"/>
 		<Metadata name="Catalog.Вакцины.ManagerModule" id="26e554be-7069-4be4-8a50-78996e7b9f22.3" configVersion="589306dea1c61f4e9135e65596208dac00000000"/>
 		<Metadata name="Catalog.Вакцины.Predefined" id="26e554be-7069-4be4-8a50-78996e7b9f22.1c" configVersion="7f105743059f10429fb709c9b65b2db900000000"/>
-		<Metadata name="Catalog.Дети" id="e4b983f7-8ec9-4363-a21a-736c40293f21" configVersion="8daa6ae9ffec2f43879fc2bf00ac162f00000000">
-			<Metadata name="Catalog.Дети.Attribute.ТипКалендаря" id="2555f577-a668-43f8-be32-8d3320e616fa"/>
+		<Metadata name="Catalog.Дети" id="e4b983f7-8ec9-4363-a21a-736c40293f21" configVersion="7ff4cd9a4130f245b1ada335ab989e4a00000000">
 			<Metadata name="Catalog.Дети.Attribute.Календарь" id="c639e532-9bc1-47ed-8a6c-bf363e3104c2"/>
 			<Metadata name="Catalog.Дети.Attribute.ДатаРождения" id="ca82e229-cbb3-44e1-8e8c-2b10ae176dfb"/>
 		</Metadata>
-		<Metadata name="Catalog.Дети.Form.ФормаЭлемента" id="072d3ab0-8c18-4aff-a2a2-7f03b3dafd6e" configVersion="898128bbc0487f40aefa05ad5f1fc2fa00000000"/>
-		<Metadata name="Catalog.Дети.Form.ФормаЭлемента.Form" id="072d3ab0-8c18-4aff-a2a2-7f03b3dafd6e.0" configVersion="a7c5350ceebc9e44b69eb649d9397abd00000000"/>
+		<Metadata name="Catalog.Дети.Form.ФормаЭлемента" id="072d3ab0-8c18-4aff-a2a2-7f03b3dafd6e" configVersion="b15906f8dc09b842a44e0dc42edf410f00000000"/>
+		<Metadata name="Catalog.Дети.Form.ФормаЭлемента.Form" id="072d3ab0-8c18-4aff-a2a2-7f03b3dafd6e.0" configVersion="7813f6d8f3e15246ba76532407ba623000000000"/>
 		<Metadata name="Catalog.Дети.ObjectModule" id="e4b983f7-8ec9-4363-a21a-736c40293f21.0" configVersion="b53b0b41260c4140b347f00077cc28e500000000"/>
 		<Metadata name="Catalog.Инфекции" id="2231df77-be53-4ce2-8923-4af2a44fb66e" configVersion="8d69399314be43479f7b33b5fce1ba8400000000">
 			<Metadata name="Catalog.Инфекции.TabularSection.МесяцаВакцинаций.Attribute.ПредставлениеВозраста" id="03cdf235-58a0-4153-b278-f9bb28658a32"/>
@@ -47,8 +46,8 @@
 		</Metadata>
 		<Metadata name="Catalog.КалендариПрививок.Form.ФормаСписка" id="5d7f4552-2ba3-4f1b-9301-d5f41cb5ddae" configVersion="231c6ceec4701145b219426e1a34d09800000000"/>
 		<Metadata name="Catalog.КалендариПрививок.Form.ФормаСписка.Form" id="5d7f4552-2ba3-4f1b-9301-d5f41cb5ddae.0" configVersion="5dbaec86cde196499f5dcf40c2e924b500000000"/>
-		<Metadata name="Catalog.КалендариПрививок.Form.ФормаЭлемента" id="1f775bc2-8a1c-4f36-8350-e80426e35b07" configVersion="8d9557e9a031264289e738e1abbddd2e00000000"/>
-		<Metadata name="Catalog.КалендариПрививок.Form.ФормаЭлемента.Form" id="1f775bc2-8a1c-4f36-8350-e80426e35b07.0" configVersion="a2d4abb0aaff854d91f6f76c59df7f0200000000"/>
+		<Metadata name="Catalog.КалендариПрививок.Form.ФормаЭлемента" id="1f775bc2-8a1c-4f36-8350-e80426e35b07" configVersion="c41fc9e6664600438fd83183a32bef7500000000"/>
+		<Metadata name="Catalog.КалендариПрививок.Form.ФормаЭлемента.Form" id="1f775bc2-8a1c-4f36-8350-e80426e35b07.0" configVersion="f8a3731900fdd84f899fb91d0562a53200000000"/>
 		<Metadata name="Catalog.КалендариПрививок.ManagerModule" id="ba5a4d41-03cf-4b94-a696-0d03319c3d1d.3" configVersion="c859b8bfc1e97f47b8ef9f0ed4dc139400000000"/>
 		<Metadata name="Catalog.КалендариПрививок.ObjectModule" id="ba5a4d41-03cf-4b94-a696-0d03319c3d1d.0" configVersion="3a531f1aeafdbb4091604afcc1b657bb00000000"/>
 		<Metadata name="Catalog.КалендариПрививок.Predefined" id="ba5a4d41-03cf-4b94-a696-0d03319c3d1d.1c" configVersion="f70fed5fb18e1444a1a8b150a31235eb00000000"/>
@@ -82,7 +81,7 @@
 		<Metadata name="CommonPicture.Внимание.Picture" id="ebe5bff1-eb79-464f-af6c-090dc6208ae1.0" configVersion="e5904c5ee5609e45848efcbc7b4dbc7900000000"/>
 		<Metadata name="CommonPicture.ЗеленаяГалочка" id="8ca6932c-eeb2-4773-a016-baba67cc6096" configVersion="e5934ced0ab2f546bf500f7ea5bc73af00000000"/>
 		<Metadata name="CommonPicture.ЗеленаяГалочка.Picture" id="8ca6932c-eeb2-4773-a016-baba67cc6096.0" configVersion="7c281b4cd5889145bce069025a78ffcd00000000"/>
-		<Metadata name="Configuration.ДетскиеПрививки" id="0fa37aec-7f6b-49af-aee0-1b71904747b1" configVersion="574cede12447dd499f18b44a67b204fc00000000"/>
+		<Metadata name="Configuration.ДетскиеПрививки" id="0fa37aec-7f6b-49af-aee0-1b71904747b1" configVersion="d050f8f60c971c489ab10976eeb2ddab00000000"/>
 		<Metadata name="Configuration.ДетскиеПрививки.HomePageWorkArea" id="58ad77f4-bdbc-41c3-b0ff-44ba328ffe74.8" configVersion="341980966f8e6c429a6463c85540f81000000000"/>
 		<Metadata name="Configuration.ДетскиеПрививки.MainSectionCommandInterface" id="58ad77f4-bdbc-41c3-b0ff-44ba328ffe74.9" configVersion="957c301617aef341862471a3e660765900000000"/>
 		<Metadata name="Configuration.ДетскиеПрививки.ManagedApplicationModule" id="58ad77f4-bdbc-41c3-b0ff-44ba328ffe74.6" configVersion="bf8b837c1f92c74599386e98b713ce5400000000"/>
@@ -95,10 +94,6 @@
 		<Metadata name="Enum.ТипыВакциныПоКоличествуИнфекцийОтКоторыхОниЗащищают" id="a566d382-f065-4c01-ad72-139e80f7902d" configVersion="fc316c9ded83bf43a9e7fb23bca2ac0a00000000">
 			<Metadata name="Enum.ТипыВакциныПоКоличествуИнфекцийОтКоторыхОниЗащищают.EnumValue.Моновакцина" id="88b39894-475d-42e4-ba62-874fdb922b36"/>
 			<Metadata name="Enum.ТипыВакциныПоКоличествуИнфекцийОтКоторыхОниЗащищают.EnumValue.Поливакцина" id="a32676a9-65ec-4f19-a0df-9aaa7a7e7349"/>
-		</Metadata>
-		<Metadata name="Enum.ТипыКалендаряПрививок" id="5587ef66-6422-4b13-8c6d-3a74fb0d2188" configVersion="553734f2e192634bbd25200f297aeb0200000000">
-			<Metadata name="Enum.ТипыКалендаряПрививок.EnumValue.ПроизвольныйКалендарь" id="17b2737c-b15b-410a-9393-5baf17a7e551"/>
-			<Metadata name="Enum.ТипыКалендаряПрививок.EnumValue.НациональныйКалендарьУтвержденныйМинздравом" id="d6711a67-a36e-4a4c-a331-0e8d24463e82"/>
 		</Metadata>
 		<Metadata name="InformationRegister.АналогиПрививок" id="5d0b21f6-6047-4b2b-883a-ef8fa30bb723" configVersion="105a2dc26f6bb84db4d1e963cc455d4e00000000">
 			<Metadata name="InformationRegister.АналогиПрививок.Dimension.АналогПрививки" id="a5e5c34e-f253-4092-a78d-908349a00767"/>

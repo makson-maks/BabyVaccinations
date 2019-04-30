@@ -161,7 +161,6 @@
 			<Catalog>Вакцины</Catalog>
 			<Catalog>КалендариПрививок</Catalog>
 			<Enum>ПериодыОтображенияКалендаря</Enum>
-			<Enum>ТипыКалендаряПрививок</Enum>
 			<Enum>ТипыВакциныПоКоличествуИнфекцийОтКоторыхОниЗащищают</Enum>
 			<InformationRegister>АналогиПрививок</InformationRegister>
 			<InformationRegister>ВерсииПодсистем</InformationRegister>

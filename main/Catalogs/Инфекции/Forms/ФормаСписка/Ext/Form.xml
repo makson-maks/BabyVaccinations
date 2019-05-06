@@ -50,7 +50,6 @@
 			<InitialTreeView>ExpandTopLevel</InitialTreeView>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
-			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -105,6 +104,15 @@
 					<ContextMenu name="ОбязательнаяКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="ОбязательнаяРасширеннаяПодсказка" id="21"/>
 				</PictureField>
+				<PictureField name="НаличиеВГруппеРиска" id="22">
+					<DataPath>Список.НаличиеВГруппеРиска</DataPath>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.КоллекцияКругов</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="НаличиеВГруппеРискаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="НаличиеВГруппеРискаРасширеннаяПодсказка" id="24"/>
+				</PictureField>
 				<LabelField name="Наименование" id="16">
 					<DataPath>Список.Наименование</DataPath>
 					<DefaultItem>true</DefaultItem>
@@ -130,7 +138,14 @@
 		КОГДА СправочникИнфекции.ВходитВНациональныйКалендарь
 			ТОГДА 0
 		ИНАЧЕ -1
-	КОНЕЦ КАК Обязательная
+	КОНЕЦ КАК Обязательная,
+	ВЫБОР
+		КОГДА СправочникИнфекции.НаличиеВГруппеРиска = ЗНАЧЕНИЕ(Перечисление.ТипыИнфекцияПоВхождениюВГруппыРиска.ВходитВГруппуРиска)
+			ТОГДА 1
+		КОГДА СправочникИнфекции.НаличиеВГруппеРиска = ЗНАЧЕНИЕ(Перечисление.ТипыИнфекцияПоВхождениюВГруппыРиска.ЧастичноВходитВГруппуРиска)
+			ТОГДА 0
+		ИНАЧЕ -1
+	КОНЕЦ КАК НаличиеВГруппеРиска
 ИЗ
 	Справочник.Инфекции КАК СправочникИнфекции</QueryText>
 				<MainTable>Catalog.Инфекции</MainTable>

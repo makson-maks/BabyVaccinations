@@ -45,7 +45,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>makson_maks</Vendor>
-			<Version>0.0.20</Version>
+			<Version>0.0.21</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -145,6 +145,9 @@
 			<StyleItem>СтильПоляВводаЦвет</StyleItem>
 			<CommonPicture>Внимание</CommonPicture>
 			<CommonPicture>ЗеленаяГалочка</CommonPicture>
+			<CommonPicture>КрасныйШар</CommonPicture>
+			<CommonPicture>ОранжевыйКруг</CommonPicture>
+			<CommonPicture>КоллекцияКругов</CommonPicture>
 			<CommonModule>ОбновлениеИнформационнойБазыВызовСервера</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыСервер</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыСлужебный</CommonModule>
@@ -164,6 +167,7 @@
 			<Catalog>КалендариПрививок</Catalog>
 			<Enum>ПериодыОтображенияКалендаря</Enum>
 			<Enum>ТипыВакциныПоКоличествуИнфекцийОтКоторыхОниЗащищают</Enum>
+			<Enum>ТипыИнфекцияПоВхождениюВГруппыРиска</Enum>
 			<InformationRegister>АналогиПрививок</InformationRegister>
 			<InformationRegister>ВерсииПодсистем</InformationRegister>
 			<InformationRegister>ПрививкиВОчереди</InformationRegister>

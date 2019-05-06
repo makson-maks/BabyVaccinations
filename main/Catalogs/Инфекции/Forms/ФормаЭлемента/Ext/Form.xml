@@ -85,6 +85,48 @@
 							<ContextMenu name="ВходитВНациональныйКалендарьКонтекстноеМеню" id="56"/>
 							<ExtendedTooltip name="ВходитВНациональныйКалендарьРасширеннаяПодсказка" id="57"/>
 						</PictureField>
+						<PictureField name="ИнфекцияТолькоДляГруппРиска" id="86">
+							<DataPath>ИнфекцияТолькоДляГруппРиска</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Только для лиц из групп риска</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.КрасныйШар</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</ValuesPicture>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+							</Border>
+							<ContextMenu name="ИнфекцияТолькоДляГруппРискаКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ИнфекцияТолькоДляГруппРискаРасширеннаяПодсказка" id="88"/>
+						</PictureField>
+						<PictureField name="ИнфекцияЧастичноДляГруппРиска" id="89">
+							<DataPath>ИнфекцияЧастичноДляГруппРиска</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Для лиц из групп риска свой возраст вакцинации</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.ОранжевыйКруг</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</ValuesPicture>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+							</Border>
+							<ContextMenu name="ИнфекцияЧастичноДляГруппРискаКонтекстноеМеню" id="90"/>
+							<ExtendedTooltip name="ИнфекцияЧастичноДляГруппРискаРасширеннаяПодсказка" id="91"/>
+						</PictureField>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаМесяцаВакцинаций" id="6">
@@ -96,78 +138,207 @@
 					</Title>
 					<ExtendedTooltip name="ГруппаМесяцаВакцинацийРасширеннаяПодсказка" id="7"/>
 					<ChildItems>
-						<Table name="МесяцаВакцинаций" id="8">
-							<Representation>List</Representation>
-							<Header>false</Header>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>Объект.МесяцаВакцинаций</DataPath>
+						<Pages name="СтраницыВозрастаВакцинаций" id="58">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Возраст вакцинации</v8:content>
+									<v8:content>Страницы возраста вакцинаций</v8:content>
 								</v8:item>
 							</Title>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="МесяцаВакцинацийКонтекстноеМеню" id="9"/>
-							<AutoCommandBar name="МесяцаВакцинацийКоманднаяПанель" id="10">
-								<Autofill>false</Autofill>
-							</AutoCommandBar>
-							<ExtendedTooltip name="МесяцаВакцинацийРасширеннаяПодсказка" id="11"/>
-							<SearchStringAddition name="МесяцаВакцинацийСтрокаПоиска" id="12">
-								<AdditionSource>
-									<Item>МесяцаВакцинаций</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="МесяцаВакцинацийСтрокаПоискаКонтекстноеМеню" id="13"/>
-								<ExtendedTooltip name="МесяцаВакцинацийСтрокаПоискаРасширеннаяПодсказка" id="14"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="МесяцаВакцинацийСостояниеПросмотра" id="15">
-								<AdditionSource>
-									<Item>МесяцаВакцинаций</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="МесяцаВакцинацийСостояниеПросмотраКонтекстноеМеню" id="16"/>
-								<ExtendedTooltip name="МесяцаВакцинацийСостояниеПросмотраРасширеннаяПодсказка" id="17"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="МесяцаВакцинацийУправлениеПоиском" id="18">
-								<AdditionSource>
-									<Item>МесяцаВакцинаций</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="МесяцаВакцинацийУправлениеПоискомКонтекстноеМеню" id="19"/>
-								<ExtendedTooltip name="МесяцаВакцинацийУправлениеПоискомРасширеннаяПодсказка" id="20"/>
-							</SearchControlAddition>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы возраста вакцинаций</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницыВозрастаВакцинацийРасширеннаяПодсказка" id="59"/>
 							<ChildItems>
-								<LabelField name="МесяцаВакцинацийНомерСтроки" id="21">
-									<DataPath>Объект.МесяцаВакцинаций.LineNumber</DataPath>
-									<Visible>false</Visible>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="МесяцаВакцинацийНомерСтрокиКонтекстноеМеню" id="22"/>
-									<ExtendedTooltip name="МесяцаВакцинацийНомерСтрокиРасширеннаяПодсказка" id="23"/>
-								</LabelField>
-								<InputField name="МесяцаВакцинацийМесяц" id="24">
-									<DataPath>Объект.МесяцаВакцинаций.Месяц</DataPath>
-									<Visible>false</Visible>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="МесяцаВакцинацийМесяцКонтекстноеМеню" id="25"/>
-									<ExtendedTooltip name="МесяцаВакцинацийМесяцРасширеннаяПодсказка" id="26"/>
-								</InputField>
-								<InputField name="МесяцаВакцинацийПредставлениеВозраста" id="48">
-									<DataPath>Объект.МесяцаВакцинаций.ПредставлениеВозраста</DataPath>
+								<Page name="СтраницаОбщийВозрастВакцинации" id="60">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Возраст</v8:content>
+											<v8:content>Общий</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="МесяцаВакцинацийПредставлениеВозрастаКонтекстноеМеню" id="49"/>
-									<ExtendedTooltip name="МесяцаВакцинацийПредставлениеВозрастаРасширеннаяПодсказка" id="50"/>
-								</InputField>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница общий возраст вакцинации</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаОбщийВозрастВакцинацииРасширеннаяПодсказка" id="61"/>
+									<ChildItems>
+										<Table name="МесяцаВакцинаций" id="8">
+											<Representation>List</Representation>
+											<Header>false</Header>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.МесяцаВакцинаций</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Возраст вакцинации</v8:content>
+												</v8:item>
+											</Title>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="МесяцаВакцинацийКонтекстноеМеню" id="9"/>
+											<AutoCommandBar name="МесяцаВакцинацийКоманднаяПанель" id="10">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="МесяцаВакцинацийРасширеннаяПодсказка" id="11"/>
+											<SearchStringAddition name="МесяцаВакцинацийСтрокаПоиска" id="12">
+												<AdditionSource>
+													<Item>МесяцаВакцинаций</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="МесяцаВакцинацийСтрокаПоискаКонтекстноеМеню" id="13"/>
+												<ExtendedTooltip name="МесяцаВакцинацийСтрокаПоискаРасширеннаяПодсказка" id="14"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="МесяцаВакцинацийСостояниеПросмотра" id="15">
+												<AdditionSource>
+													<Item>МесяцаВакцинаций</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="МесяцаВакцинацийСостояниеПросмотраКонтекстноеМеню" id="16"/>
+												<ExtendedTooltip name="МесяцаВакцинацийСостояниеПросмотраРасширеннаяПодсказка" id="17"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="МесяцаВакцинацийУправлениеПоиском" id="18">
+												<AdditionSource>
+													<Item>МесяцаВакцинаций</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="МесяцаВакцинацийУправлениеПоискомКонтекстноеМеню" id="19"/>
+												<ExtendedTooltip name="МесяцаВакцинацийУправлениеПоискомРасширеннаяПодсказка" id="20"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="МесяцаВакцинацийНомерСтроки" id="21">
+													<DataPath>Объект.МесяцаВакцинаций.LineNumber</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МесяцаВакцинацийНомерСтрокиКонтекстноеМеню" id="22"/>
+													<ExtendedTooltip name="МесяцаВакцинацийНомерСтрокиРасширеннаяПодсказка" id="23"/>
+												</LabelField>
+												<InputField name="МесяцаВакцинацийМесяц" id="24">
+													<DataPath>Объект.МесяцаВакцинаций.Месяц</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МесяцаВакцинацийМесяцКонтекстноеМеню" id="25"/>
+													<ExtendedTooltip name="МесяцаВакцинацийМесяцРасширеннаяПодсказка" id="26"/>
+												</InputField>
+												<InputField name="МесяцаВакцинацийПредставлениеВозраста" id="48">
+													<DataPath>Объект.МесяцаВакцинаций.ПредставлениеВозраста</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Возраст</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МесяцаВакцинацийПредставлениеВозрастаКонтекстноеМеню" id="49"/>
+													<ExtendedTooltip name="МесяцаВакцинацийПредставлениеВозрастаРасширеннаяПодсказка" id="50"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаДляГруппРискаВозрастВакцинации" id="62">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Для групп риска</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница для групп риска возраст вакцинации</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаДляГруппРискаВозрастВакцинацииРасширеннаяПодсказка" id="63"/>
+									<ChildItems>
+										<Table name="МесяцаВакцинацийДляЛицИзГруппРиска" id="64">
+											<Representation>List</Representation>
+											<Header>false</Header>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.МесяцаВакцинацийДляЛицИзГруппРиска</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>CancelSearch</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>Find</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>OutputList</ExcludedCommand>
+												<ExcludedCommand>SelectAll</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+												<ExcludedCommand>SortListAsc</ExcludedCommand>
+												<ExcludedCommand>SortListDesc</ExcludedCommand>
+											</CommandSet>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="МесяцаВакцинацийДляЛицИзГруппРискаКонтекстноеМеню" id="65"/>
+											<AutoCommandBar name="МесяцаВакцинацийДляЛицИзГруппРискаКоманднаяПанель" id="66">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="МесяцаВакцинацийДляЛицИзГруппРискаРасширеннаяПодсказка" id="67"/>
+											<SearchStringAddition name="МесяцаВакцинацийДляЛицИзГруппРискаСтрокаПоиска" id="68">
+												<AdditionSource>
+													<Item>МесяцаВакцинацийДляЛицИзГруппРиска</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="МесяцаВакцинацийДляЛицИзГруппРискаСтрокаПоискаКонтекстноеМеню" id="69"/>
+												<ExtendedTooltip name="МесяцаВакцинацийДляЛицИзГруппРискаСтрокаПоискаРасширеннаяПодсказка" id="70"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="МесяцаВакцинацийДляЛицИзГруппРискаСостояниеПросмотра" id="71">
+												<AdditionSource>
+													<Item>МесяцаВакцинацийДляЛицИзГруппРиска</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="МесяцаВакцинацийДляЛицИзГруппРискаСостояниеПросмотраКонтекстноеМеню" id="72"/>
+												<ExtendedTooltip name="МесяцаВакцинацийДляЛицИзГруппРискаСостояниеПросмотраРасширеннаяПодсказка" id="73"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="МесяцаВакцинацийДляЛицИзГруппРискаУправлениеПоиском" id="74">
+												<AdditionSource>
+													<Item>МесяцаВакцинацийДляЛицИзГруппРиска</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="МесяцаВакцинацийДляЛицИзГруппРискаУправлениеПоискомКонтекстноеМеню" id="75"/>
+												<ExtendedTooltip name="МесяцаВакцинацийДляЛицИзГруппРискаУправлениеПоискомРасширеннаяПодсказка" id="76"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="МесяцаВакцинацийДляЛицИзГруппРискаНомерСтроки" id="77">
+													<DataPath>Объект.МесяцаВакцинацийДляЛицИзГруппРиска.LineNumber</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МесяцаВакцинацийДляЛицИзГруппРискаНомерСтрокиКонтекстноеМеню" id="78"/>
+													<ExtendedTooltip name="МесяцаВакцинацийДляЛицИзГруппРискаНомерСтрокиРасширеннаяПодсказка" id="79"/>
+												</LabelField>
+												<InputField name="МесяцаВакцинацийДляЛицИзГруппРискаМесяц" id="80">
+													<DataPath>Объект.МесяцаВакцинацийДляЛицИзГруппРиска.Месяц</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МесяцаВакцинацийДляЛицИзГруппРискаМесяцКонтекстноеМеню" id="81"/>
+													<ExtendedTooltip name="МесяцаВакцинацийДляЛицИзГруппРискаМесяцРасширеннаяПодсказка" id="82"/>
+												</InputField>
+												<InputField name="МесяцаВакцинацийДляЛицИзГруппРискаПредставлениеВозраста" id="83">
+													<DataPath>Объект.МесяцаВакцинацийДляЛицИзГруппРиска.ПредставлениеВозраста</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МесяцаВакцинацийДляЛицИзГруппРискаПредставлениеВозрастаКонтекстноеМеню" id="84"/>
+													<ExtendedTooltip name="МесяцаВакцинацийДляЛицИзГруппРискаПредставлениеВозрастаРасширеннаяПодсказка" id="85"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
 							</ChildItems>
-						</Table>
+						</Pages>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаВакцины" id="27">
@@ -249,6 +420,28 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИнфекцияТолькоДляГруппРиска" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инфекция только для групп риска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнфекцияЧастичноДляГруппРиска" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инфекция частично для групп риска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 </Form>

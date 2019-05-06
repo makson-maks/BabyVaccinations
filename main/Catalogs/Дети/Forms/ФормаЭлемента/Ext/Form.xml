@@ -62,6 +62,15 @@
 					<ContextMenu name="КалендарьКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="КалендарьРасширеннаяПодсказка" id="16"/>
 				</InputField>
+				<CheckBoxField name="ВходитВГруппуРиска" id="19">
+					<DataPath>Объект.ВходитВГруппуРиска</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВГруппуРискаКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ВходитВГруппуРискаРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="OnChange">ВходитВГруппуРискаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<Button name="СформироватьКалендарьПрививок" id="12">
